@@ -1,0 +1,43 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 30px;
+}
+
+.logo {
+   display: flex;
+   color: #00af91;
+   text-decoration: none;
+}
+
+.logo h1:first-child {
+   color: #ffcc29;
+}
+
+.barra-busqueda {
+   padding: 10px;
+   width: 50%;
+   border-radius: 10px;
+   outline: none;
+   border: 1px solid #c2c2c2;
+   box-shadow: 0px 1px 3px -1px #323232;
+}
+
+.barra-busqueda::placeholder {
+   color: #c2c2c2;
+}
+
+.img-perfil img {
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   object-fit: cover;
+}
