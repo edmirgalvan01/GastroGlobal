@@ -5,11 +5,13 @@
    font-family: 'Montserrat', sans-serif;
 }
 
+/* HEADER */
 header {
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 15px 30px;
+   margin-bottom: 20px;
 }
 
 .logo {
@@ -40,4 +42,84 @@ header {
    height: 40px;
    border-radius: 100%;
    object-fit: cover;
+}
+/* HEADER */
+
+/* RESTAURANT */
+.main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.container {
+   width: 90%;
+}
+/* RESTAURANT-TITULOS */
+.titulos {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.titulos p {
+   color: #c2c2c2;
+}
+/* RESTAURANT-TITULOS */
+
+/* RESTAURANT-FOTOS */
+.fotos-restaurant {
+   padding: 10px 0;
+   display: flex;
+   gap: 5px;
+   height: calc(100vh - 10px);
+   margin-bottom: 20px;
+}
+.fotos-restaurant img {
+   width: 25%;
+   height: auto;
+   object-fit: cover;
+}
+/* RESTAURANT-FOTOS */
+
+/* RESTAURANT-DESCRIPCION-SERVICIOS */
+.descripcion-servicios {
+   display: flex;
+   gap: 10px;
+}
+
+.textos-descripcion {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   width: 50%;
+}
+
+.descripcion-horario {
+   color: #c2c2c2;
+}
+
+.descripcion {
+   line-height: 30px;
+}
+
+.descripcion-especialidad {
+   font-weight: bold;
+}
+
+.servicios {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   gap: 10px;
+   flex-wrap: wrap;
+}
+
+.servicio-item {
+   gap: 5px;
+   width: 40%;
+   padding: 5px 10px;
+   border: 1px solid #000;
 }
