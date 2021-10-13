@@ -70,11 +70,11 @@ header {
 .titulos {
    display: flex;
    flex-direction: column;
-   gap: 10px;
 }
 
 .titulo {
    font-size: 2rem;
+   margin-bottom: 20px;
 }
 
 .titulos p {
