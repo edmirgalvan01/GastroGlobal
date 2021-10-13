@@ -1,3 +1,7 @@
+html {
+   scroll-behavior: smooth;
+}
+
 * {
    margin: 0;
    padding: 0;
@@ -87,6 +91,7 @@ header {
 .descripcion-servicios {
    display: flex;
    gap: 10px;
+   margin-bottom: 20px;
 }
 
 .textos-descripcion {
@@ -104,10 +109,6 @@ header {
    line-height: 30px;
 }
 
-.descripcion-especialidad {
-   font-weight: bold;
-}
-
 .servicios {
    display: flex;
    justify-content: center;
@@ -118,8 +119,106 @@ header {
 }
 
 .servicio-item {
-   gap: 5px;
    width: 40%;
    padding: 5px 10px;
-   border: 1px solid #000;
+}
+/* RESTAURANT-DESCRIPCION-SERVICIOS */
+
+/* OPINIONES */
+.opiniones {
+   margin-bottom: 20px;
+}
+.opiniones h1 {
+   margin-bottom: 20px;
+}
+
+.lista-opiniones {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+/* OPINION */
+.opinion-item {
+   width: 30%;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.datos-usuario {
+   display: flex;
+}
+
+.imagen-usuario {
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   object-fit: cover;
+   margin-right: 10px;
+}
+
+.datos-usuario-contenido p {
+   font-size: 12px;
+}
+
+.contenido-opinion {
+   line-height: 25px;
+}
+/* OPINION */
+.crear-opinion {
+   padding: 15px 30px;
+   border: none;
+   background-color: #ffcc29;
+   color: #000;
+   font-size: 17px;
+   border-radius: 8px;
+   font-weight: bold;
+   cursor: pointer;
+}
+/* OPINIONES */
+
+/* UBICACION */
+.ubicacion {
+   margin-bottom: 20px;
+}
+.ubicacion h1 {
+   margin-bottom: 20px;
+}
+.mapa-restaurant {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.ubicacion iframe {
+   width: 60%;
+   height: 500px;
+   border: none;
+   border-radius: 8px;
+   box-shadow: 2px 2px 8px 0px #323232;
+}
+/* UBICACION */
+
+/* FOOTER */
+footer {
+   padding: 20px 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #c2c2c2;
+   gap: 10px;
+}
+footer p {
+   font-size: 20px;
+   color: #000;
+}
+
+footer a {
+   color: #000;
+   font-size: 15px;
 }
