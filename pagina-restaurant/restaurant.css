@@ -1,5 +1,6 @@
 html {
    scroll-behavior: smooth;
+   font-size: 16px;
 }
 
 * {
@@ -24,6 +25,10 @@ header {
    text-decoration: none;
 }
 
+.logo h1 {
+   font-size: 2rem;
+}
+
 .logo h1:first-child {
    color: #ffcc29;
 }
@@ -39,6 +44,7 @@ header {
 
 .barra-busqueda::placeholder {
    color: #c2c2c2;
+   font-size: 0.8rem;
 }
 
 .img-perfil img {
@@ -65,6 +71,10 @@ header {
    display: flex;
    flex-direction: column;
    gap: 10px;
+}
+
+.titulo {
+   font-size: 2rem;
 }
 
 .titulos p {
@@ -107,6 +117,7 @@ header {
 
 .descripcion {
    line-height: 30px;
+   font-size: 1rem;
 }
 
 .servicios {
@@ -121,6 +132,10 @@ header {
 .servicio-item {
    width: 40%;
    padding: 5px 10px;
+}
+
+.servicio-item p {
+   font-size: 1rem;
 }
 /* RESTAURANT-DESCRIPCION-SERVICIOS */
 
@@ -162,11 +177,12 @@ header {
 }
 
 .datos-usuario-contenido p {
-   font-size: 12px;
+   font-size: 1rem;
 }
 
 .contenido-opinion {
    line-height: 25px;
+   font-size: 1rem;
 }
 /* OPINION */
 .crear-opinion {
@@ -214,11 +230,50 @@ footer {
    gap: 10px;
 }
 footer p {
-   font-size: 20px;
+   font-size: 1rem;
+   text-align: center;
    color: #000;
 }
 
 footer a {
    color: #000;
    font-size: 15px;
+}
+/* FOOTER */
+
+/* RESPONSIVE */
+@media screen and (max-width: 800px) {
+   html {
+      font-size: 13px;
+   }
+   .descripcion-servicios {
+      flex-direction: column;
+   }
+   .textos-descripcion,
+   .servicios {
+      width: 100%;
+   }
+   .opinion-item {
+      width: 40%;
+   }
+   .ubicacion iframe {
+      width: 80%;
+      height: 350px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .fotos-restaurant {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .fotos-restaurant img {
+      width: 45%;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   html {
+      font-size: 11px;
+   }
 }
