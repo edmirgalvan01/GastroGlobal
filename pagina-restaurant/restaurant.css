@@ -143,9 +143,6 @@ header {
 .opiniones {
    margin-bottom: 20px;
 }
-.opiniones h1 {
-   margin-bottom: 20px;
-}
 
 .lista-opiniones {
    display: flex;
@@ -193,15 +190,13 @@ header {
    font-size: 17px;
    border-radius: 8px;
    font-weight: bold;
+   text-decoration: none;
    cursor: pointer;
 }
 /* OPINIONES */
 
 /* UBICACION */
 .ubicacion {
-   margin-bottom: 20px;
-}
-.ubicacion h1 {
    margin-bottom: 20px;
 }
 .mapa-restaurant {
