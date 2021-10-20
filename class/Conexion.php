@@ -5,18 +5,22 @@
     class Conexion {
         private $user = "root";
         private $password = "pinocho8";
-        private $dbName = "ejemplo"; //TODO: cambiar nombre BBDD
+        private $dbName = "gastroglobal";
         private $server = "localhost";
         private $conexion;
 
         public function __construct() {
             $this -> conectar();
+            $this -> desconectar();
         }
 
         public function conectar() {
             try {
                 //Conectamos a base de datos
                 $this -> conexion = new mysqli($this -> server, $this -> user, $this -> password, $this -> dbName);
+                if(!$this -> conexion -> connect_errno) {
+                    echo "Conectado";
+                }
             } catch (mysqli_sql_exception $error) {
                 echo "Ha ocurrido un error: " . $error->getCode();
                 echo "<br> Mensaje de error: " . $error->getMessage();
@@ -30,5 +34,4 @@
             $this->conexion->close();
         }
     }
-    
 ?>
