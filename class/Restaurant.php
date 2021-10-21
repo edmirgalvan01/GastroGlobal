@@ -7,7 +7,6 @@ class Restaurant {
     private $telefono_contacto;
     private $direccion;
     private $id_propietario;
-    private $id_opiniones;
 
     public function __construct($nombre, $descripcion, $telefono_contacto, $direccion) {
         $this -> nombre = $nombre;
@@ -62,14 +61,6 @@ class Restaurant {
 
     public function getId_propietario() {
         return $this -> id_propietario;
-    }
-    
-    public function setId_opiniones($id_opiniones) {
-        $this -> $id_opiniones;
-    }
-
-    public function getId_opiniones() {
-        return $this -> id_opiniones;
     }
 }
 
