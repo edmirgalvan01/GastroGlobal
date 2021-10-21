@@ -7,8 +7,9 @@ class Restaurant {
     private $telefono_contacto;
     private $direccion;
     private $id_propietario;
+    private $fotos;
 
-    public function __construct($nombre, $descripcion, $telefono_contacto, $direccion) {
+    public function __construct($nombre, $descripcion, $telefono_contacto, $direccion, $fotos) {
         $this -> nombre = $nombre;
         $this -> descripcion = $descripcion;
         $this -> telefono_contacto = $telefono_contacto;
@@ -61,6 +62,14 @@ class Restaurant {
 
     public function getId_propietario() {
         return $this -> id_propietario;
+    }
+    
+    public function setFotos($fotos) {
+        $this -> $fotos;
+    }
+
+    public function getFotos() {
+        return $this -> fotos;
     }
 }
 
