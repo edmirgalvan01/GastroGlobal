@@ -14,6 +14,7 @@ class Restaurant {
         $this -> descripcion = $descripcion;
         $this -> telefono_contacto = $telefono_contacto;
         $this -> direccion = $direccion;
+        $this -> fotos = $fotos;
     }
 
     public function setId($id) {

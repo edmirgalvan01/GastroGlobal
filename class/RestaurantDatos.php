@@ -35,14 +35,108 @@ class RestaurantDatos extends Conexion implements Plantilla {
             return $resultado;
         } catch (mysqli_sql_exception $e) {
             echo $e->getMessage();
-        } finally {
-            $this -> desconectar();
+        } 
+    }
+    public function modificar($objeto) {
+        try {
+            $consulta = $this -> conexion -> prepare($this -> sqlModificar);
+            $consulta -> bind_param('ssissi',
+                $objeto -> getNombre(),
+                $objeto -> getDescripcion(),
+                $objeto -> getTelefono_contacto(),
+                $objeto -> getDireccion(),
+                $objeto -> getFotos(),
+                $objeto -> getId(), //TODO: Preguntar a la maestra sobre el ID
+            );
+            $resultado = $consulta -> execute();
+            return $resultado;
+        } catch (mysqli_sql_exception $e) {
+            echo $e->getMessage();
+        } 
+    }
+    public function eliminar($id) {
+        try {
+            $consulta = $this -> conexion -> prepare($this -> sqlEliminar);
+            $consulta -> bind_param('i', $id);
+            $resultado = $consulta->execute();
+            return $resultado;
+        } catch (mysqli_sql_exception $e) {
+            echo $e->getMessage();
+        } 
+    }
+    public function leerTodo() {
+        $restaurant = null;
+        $restaurantes = array();
+
+        try {
+            $consulta = $this -> conexion -> prepare($this -> sqlLeerTodo);
+            $consulta -> execute();
+            $resultado = $consulta -> get_result();
+
+            while($fila = mysqli_fetch_array($resultado)) {
+                $restaurant = new Restaurant(
+                    $fila[1],
+                    $fila[2],
+                    $fila[3],
+                    $fila[4],
+                    $fila[5],
+                );
+                $restaurant -> getId($fila[0]);
+                array_push($restaurantes, $restaurant);
+            }
+        } catch (mysqli_sql_exception $e) {
+            echo $e->getMessage();
+        } 
+    }
+    public function leer($id) {
+        $restaurant = null;
+
+        try {
+            $consulta = $this -> conexion -> prepare($this -> sqlLeer);
+            $consulta -> bind_param('i', $id);
+            $consulta -> execute();
+            $resultado = $consulta -> get_result();
+
+            while($fila = mysqli_fetch_array($resultado)) {
+                $restaurant = new Restaurant(
+                    $fila[1],
+                    $fila[2],
+                    $fila[3],
+                    $fila[4],
+                    $fila[5],
+                );
+                $restaurant -> getId($fila[0]);
+            } //TODO: Preguntar del return, por ahora no hay nada
+
+        } catch (mysqli_sql_exception $e) {
+            echo $e->getMessage();
         }
     }
-    public function modificar($objeto) {}
-    public function eliminar($id) {}
-    public function leerTodo() {}
-    public function leer($id) {}
+    public function buscar($valor) {
+        $restaurant = null;
+        $restaurantes = array();
+
+        try {
+            $consulta = $this -> conexion -> prepare($this -> sqlBuscar);
+            $consulta -> bind_param('s', $valor);
+            $consulta -> execute();
+            $resultado = $consulta -> get_result();
+
+            while($fila = mysqli_fetch_array($resultado)) {
+                $restaurant = new Restaurant(
+                    $fila[1],
+                    $fila[2],
+                    $fila[3],
+                    $fila[4],
+                    $fila[5],
+                );
+                $restaurant -> getId($fila[0]);
+                array_push($restaurantes, $restaurant);
+            }
+        } catch (mysqli_sql_exception $e) {
+            echo $e->getMessage();
+        } 
+    }
 }
 
 ?>
