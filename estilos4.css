@@ -1,0 +1,42 @@
+.card-border{
+    border: solid 4px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover{
+    transform: scale(1.05);
+}
+.d-flex input[type = "search"]{
+    border-radius: 24px;
+    width: 400px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+ }
+ .d-flex button[type = "submit"]{
+    position: absolute;
+    top: 55%;
+    left: 61%;
+    transform: translate(-55%,-61%);
+ 
+ }
+ .d-flex2 button[type = "submit"]{
+    position: absolute;
+    top: 55%;
+    left: 95%;
+    transform: translate(-55%,-61%);
+    border-radius: 100px;
+    border: 2px solid white;
+
+ }
+
+.nav navbar{
+    background-color: olivedrab;
+    color: orange;
+}
