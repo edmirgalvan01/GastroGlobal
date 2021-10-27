@@ -1,4 +1,3 @@
-// me falta agregar color pero estoy investigando algunas cosas sobre la psicologia del color//
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +7,15 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 <!--Header-->
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="img/logo propuesta 1.png" alt="" width="100" height="100">
-    </a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo propuesta 1.png" alt="" width="100" height="100">
+      </a>
       <form class="d-flex">
         <input class="form-control me-2 text-center" type="search" placeholder="Busca tu lugar preferido" aria-label="Search">
       </form>
@@ -34,15 +33,15 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Contactanos</a>
           </li>
-    <form class="d-flex2">
-      <button class="btn btn-outline-light" type="submit">
-        <a>
-          <img src="img/icono.png" alt="" width="40" height="40">
-        </a>
-      </button>
-    </form>
-  </div>
-</nav>
+      <form class="d-flex2">
+        <button class="btn btn-outline-light" type="submit">
+          <a>
+            <img src="img/icono.png" alt="" width="40" height="40">
+          </a>
+        </button>
+      </form>
+    </div>
+  </nav>
 <!--Imagen_Bienvenida-->
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
