@@ -15,7 +15,6 @@ class PropietarioDatos extends Conexion implements Plantilla{
     private $sql_eliminar="DELETE from Propietarios WHERE id=?";
     private $sql_leer="SELECT * FROM Propietarios WHERE id=?";
     private $sql_leerTodo="SELECT * FROM Propietarios";
-    private $sql_buscar="SELECT * FROM Propietarios WHERE nombre LIKE ?";
     private $conexion;
 
 
@@ -50,15 +49,15 @@ class PropietarioDatos extends Conexion implements Plantilla{
     }
 
     public function eliminar($id){
-            try {
-                $consulta=$this->conexion->prepare($this->sql_eliminar);
-                $consulta->bind_param('i',$id);
+        try {
+            $consulta=$this->conexion->prepare($this->sql_eliminar);
+            $consulta->bind_param('i',$id);
                 
-                $resultado=$consulta->execute();
-                return $resultado;
-            } catch (mysqli_sql_exception $e){
-                echo $e->getMessage();       
-            }
+            $resultado=$consulta->execute();
+            return $resultado;
+        } catch (mysqli_sql_exception $e){
+            echo $e->getMessage();       
+        }
     }
 
     public function leer($id){
