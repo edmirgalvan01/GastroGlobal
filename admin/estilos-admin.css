@@ -98,3 +98,9 @@ main {
    border: none;
    outline: none;
 }
+
+.boton {
+   background-color: #00af91;
+   border: none;
+   padding: 5px 10px;
+}

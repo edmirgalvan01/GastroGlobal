@@ -26,10 +26,6 @@
             <h1>Informacion personal</h1>
             <form class="formulario">
                 <div class="form-item">
-                    <label for="curp">CURP</label>
-                    <input class="input" type="number" id="curp" name="curp">
-                </div>
-                <div class="form-item">
                     <label for="numero_telefono">Numero de telefono</label>
                     <input class="input" type="number" id="numero_telefono" name="numero_telefono">
                 </div>
@@ -42,7 +38,7 @@
                     <input class="input" type="password" id="contreseña" name="contreseña">
                 </div>
 
-                <button type="submit" id="guardar_propietario">Guardar</button>
+                <button class="boton" type="submit" id="guardar_propietario">Guardar</button>
             </form>
 
             <h1>Informacion del restaurant</h1>
@@ -53,8 +49,7 @@
                 </div>
                 <div class="form-item">
                     <label for="dias_laburo">Dias que laboran</label>
-                    <input class="input" type="text" id="dias_laburo" name="dias_laburo"
-                        placeholder="Ej: Lunes a viernes">
+                    <input class="input" type="text" id="dias_laburo" name="dias_laburo" placeholder="Ej: Lunes a viernes">
                 </div>
                 <div class="form-item">
                     <label for="horario_entrada">Horario de entrada</label>
@@ -72,8 +67,7 @@
                 </div>
                 <div class="form-item">
                     <label for="telefono_contacto_restaurant">Telefono de contacto</label>
-                    <input class="input" type="number" id="telefono_contacto_restaurant"
-                        name="telefono_contacto_restaurant">
+                    <input class="input" type="number" id="telefono_contacto_restaurant" name="telefono_contacto_restaurant">
                 </div>
 
                 <div class="form-item">
@@ -89,11 +83,12 @@
                     <input type="file" id="fotos" name="fotos">
                 </div>
 
-                <button type="submit" id="guardar_restaurant">Guardar</button>
+                <button class="boton" type="submit" id="guardar_restaurant">Guardar</button>
             </form>
         </div>
     </main>
     <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/tipos_restaurant.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,6 @@ class Servicio
 {
     private $id;
     private $nombre;
-    private $logo;
 
     public function __construct($nombre)
     {
