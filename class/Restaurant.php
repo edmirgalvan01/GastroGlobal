@@ -15,12 +15,13 @@ class Restaurant
     private $especialidad;
     private $dias_laboran;
 
-    public function __construct($nombre, $descripcion, $telefono_contacto, $direccion, $fotos, $email, $horario_entrada, $horario_salida, $especialidad, $dias_laboran)
+    public function __construct($nombre, $descripcion, $telefono_contacto, $direccion, $id_propietario, $fotos, $email, $horario_entrada, $horario_salida, $especialidad, $dias_laboran)
     {
         $this->nombre = $nombre;
         $this->descripcion = $descripcion;
         $this->telefono_contacto = $telefono_contacto;
         $this->direccion = $direccion;
+        $this->id_propietario = $id_propietario;
         $this->fotos = $fotos;
         $this->email = $email;
         $this->horario_entrada = $horario_entrada;
@@ -79,12 +80,12 @@ class Restaurant
         return $this->direccion;
     }
 
-    public function setId_propietario($id_propietario)
+    public function setIdPropietario($id_propietario)
     {
         $this->$id_propietario;
     }
 
-    public function getId_propietario()
+    public function getIdPropietario()
     {
         return $this->id_propietario;
     }
