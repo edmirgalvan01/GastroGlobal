@@ -81,7 +81,7 @@ class RestaurantDatos extends Conexion implements Plantilla {
                     $fila[4],
                     $fila[5],
                 );
-                $restaurant -> getId($fila[0]);
+                $restaurant -> setId($fila[0]);
                 array_push($restaurantes, $restaurant);
             }
         } catch (mysqli_sql_exception $e) {
@@ -105,7 +105,7 @@ class RestaurantDatos extends Conexion implements Plantilla {
                     $fila[4],
                     $fila[5],
                 );
-                $restaurant -> getId($fila[0]);
+                $restaurant -> setId($fila[0]);
             } //TODO: Preguntar del return, por ahora no hay nada
 
         } catch (mysqli_sql_exception $e) {
@@ -130,7 +130,7 @@ class RestaurantDatos extends Conexion implements Plantilla {
                     $fila[4],
                     $fila[5],
                 );
-                $restaurant -> getId($fila[0]);
+                $restaurant -> setId($fila[0]);
                 array_push($restaurantes, $restaurant);
             }
         } catch (mysqli_sql_exception $e) {
