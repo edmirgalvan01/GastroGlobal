@@ -6,10 +6,9 @@ class Servicio
     private $nombre;
     private $logo;
 
-    public function __construct($nombre, $logo)
+    public function __construct($nombre)
     {
         $this->nombre = $nombre;
-        $this->logo = $logo;
     }
 
     public function setId($id)
@@ -30,15 +29,5 @@ class Servicio
     public function getNombre()
     {
         return $this->nombre;
-    }
-
-    public function setLogo($logo)
-    {
-        $this->logo = $logo;
-    }
-
-    public function getLogo()
-    {
-        return $this->logo;
     }
 }

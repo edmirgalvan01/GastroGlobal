@@ -1,17 +1,17 @@
 <?php
 
 
-require_once('conexion.php');
+require_once('Conexion.php');
 require_once('Plantilla.php');
 require_once('Servicio.php');
 
 mysqli_report(MYSQLI_REPORT_ALL & ~MYSQLI_REPORT_INDEX);
 
-class UsuarioDatos extends Conexion implements Plantilla
+class DatosServicio extends Conexion implements Plantilla
 {
 
-    private $sql_insertar = "INSERT INTO Servicios(nombre,logo) VALUES(?,?)";
-    private $sql_modificar = "UPDATE Servicios SET nombre=?,logo=? WHERE id=?";
+    private $sql_insertar = "INSERT INTO Servicios(nombre) VALUES(?)";
+    private $sql_modificar = "UPDATE Servicios SET nombre=? WHERE id=?";
     private $sql_eliminar = "DELETE from Servicios WHERE id=?";
     private $sql_leer = "SELECT * FROM Servicios WHERE id=?";
     private $sql_leerTodo = "SELECT * FROM Servicios";
@@ -27,7 +27,7 @@ class UsuarioDatos extends Conexion implements Plantilla
     {
         try {
             $consulta = $this->conexion->prepare($this->sql_insertar);
-            $consulta->bind_param('ss', $objeto->getNombre(), $objeto->getLogo());
+            $consulta->bind_param('s', $objeto->getNombre());
 
             $resultado = $consulta->execute();
             return $resultado;
@@ -41,9 +41,8 @@ class UsuarioDatos extends Conexion implements Plantilla
         try {
             $consulta = $this->conexion->prepare($this->sql_modificar);
             $consulta->bind_param(
-                'ssi',
+                'si',
                 $objeto->getNombre(),
-                $objeto->getLogo(),
                 $objeto->getId()
             );
 
@@ -77,7 +76,7 @@ class UsuarioDatos extends Conexion implements Plantilla
             $resultado = $consulta->get_result();
 
             while ($fila = mysqli_fetch_array($resultado)) {
-                $Servicio = new Servicio($fila[1], $fila[2]);
+                $Servicio = new Servicio($fila[1]);
                 $Servicio->setId($fila[0]);
             }
         } catch (mysqli_sql_exception $e) {
@@ -97,7 +96,7 @@ class UsuarioDatos extends Conexion implements Plantilla
             $resultado = $consulta->get_result();
 
             while ($fila = mysqli_fetch_array($resultado)) {
-                $servicio = new Servicio($fila[1], $fila[2]);
+                $servicio = new Servicio($fila[1]);
                 $servicio->setId($fila[0]);
 
                 array_push($servicios, $servicio);
