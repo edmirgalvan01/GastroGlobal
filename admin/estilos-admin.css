@@ -102,5 +102,8 @@ main {
 .boton {
    background-color: #00af91;
    border: none;
-   padding: 5px 10px;
+   padding: 10px 20px;
+   border-radius: 8px;
+   font-size: 1rem;
+   cursor: pointer;
 }

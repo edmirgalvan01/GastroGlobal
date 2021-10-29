@@ -24,10 +24,10 @@
     <main>
         <div class="container">
             <h1>Informacion personal</h1>
-            <form class="formulario">
+            <form action="./scripts/insertar_propietario.php" method="post" enctype="multipart/form-data" class="formulario">
                 <div class="form-item">
-                    <label for="numero_telefono">Numero de telefono</label>
-                    <input class="input" type="number" id="numero_telefono" name="numero_telefono">
+                    <label for="nombre_propietario">Nombre completo</label>
+                    <input class="input" type="text" id="nombre_propietario" name="nombre_propietario">
                 </div>
                 <div class="form-item">
                     <label for="email_propietario">Correo electronico</label>
@@ -35,14 +35,14 @@
                 </div>
                 <div class="form-item">
                     <label for="contreseña">Contraseña</label>
-                    <input class="input" type="password" id="contreseña" name="contreseña">
+                    <input class="input" type="password" id="contreseña" name="contraseña">
                 </div>
 
                 <button class="boton" type="submit" id="guardar_propietario">Guardar</button>
             </form>
 
             <h1>Informacion del restaurant</h1>
-            <form class="formulario">
+            <form action="./script/insertar_restaurant.php" method="post" enctype="multipart/form-data" class="formulario">
                 <div class="form-item">
                     <label for="email_restaurant">Correo electronico</label>
                     <input class="input" type="email" id="email_restaurant" name="email_restaurant">
@@ -62,7 +62,7 @@
                 <div class="form-item">
                     <label for="servicios">Servicios con los que cuentan</label>
                     <select name="servicios" id="servicios">
-                        <!-- TODO: Insertar mediante PHP -->
+                        <!-- Insertar mediante PHP -->
                     </select>
                 </div>
                 <div class="form-item">

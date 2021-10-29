@@ -7,11 +7,11 @@ require_once('Propietario.php');
 
 mysqli_report(MYSQLI_REPORT_ALL & ~MYSQLI_REPORT_INDEX);
 
-class PropietarioDatos extends Conexion implements Plantilla
+class DatosPropietario extends Conexion implements Plantilla
 {
 
     private $sql_insertar = "INSERT INTO Propietarios(nombre,email,password)
-                                      values(?,?,?,?)";
+                                      values(?,?,?)";
     private $sql_modificar = "UPDATE Propietarios SET nombre=?,email=?,password=? WHERE id=?";
     private $sql_eliminar = "DELETE from Propietarios WHERE id=?";
     private $sql_leer = "SELECT * FROM Propietarios WHERE id=?";
@@ -28,7 +28,10 @@ class PropietarioDatos extends Conexion implements Plantilla
     {
         try {
             $consulta = $this->conexion->prepare($this->sql_insertar);
-            $consulta->bind_param('sss', $objeto->getNombre(), $objeto->getEmail(), $objeto->getPassword());
+            $nombre = $objeto->getNombre();
+            $email = $objeto->getEmail();
+            $password = $objeto->getPassword();
+            $consulta->bind_param('sss', $nombre, $email, $password);
 
             $resultado = $consulta->execute();
             return $resultado;
@@ -41,7 +44,11 @@ class PropietarioDatos extends Conexion implements Plantilla
     {
         try {
             $consulta = $this->conexion->prepare($this->sql_modificar);
-            $consulta->bind_param('sssi', $objeto->getNombre(), $objeto->getEmail(), $objeto->getPassword(), $objeto->getId());
+            $nombre = $objeto->getNombre();
+            $email = $objeto->getEmail();
+            $password = $objeto->getPassword();
+            $id = $objeto->getId();
+            $consulta->bind_param('sssi', $nombre, $email, $password, $id);
 
             $resultado = $consulta->execute();
             return $resultado;
