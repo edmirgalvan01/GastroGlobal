@@ -6,7 +6,7 @@ require_once('Restaurant.php');
 
 mysqli_report(MYSQLI_REPORT_ALL & MYSQLI_REPORT_ALL & ~MYSQLI_REPORT_INDEX);
 
-class RestaurantDatos extends Conexion implements Plantilla
+class DatosRestaurant extends Conexion implements Plantilla
 {
     private $sqlCrear = "INSERT INTO restaurantes(nombre, descripcion, telefono_contacto, direccion, fotos) 
                             VALUES (?, ?, ?, ?, ?)";

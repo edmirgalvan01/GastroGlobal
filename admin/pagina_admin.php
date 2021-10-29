@@ -44,6 +44,10 @@
             <h1>Informacion del restaurant</h1>
             <form action="./script/insertar_restaurant.php" method="post" enctype="multipart/form-data" class="formulario">
                 <div class="form-item">
+                    <label for="nombre_restaurant">Nombre</label>
+                    <input class="input" type="text" id="nombre_restaurant" name="nombre_restaurant">
+                </div>
+                <div class="form-item">
                     <label for="email_restaurant">Correo electronico</label>
                     <input class="input" type="email" id="email_restaurant" name="email_restaurant">
                 </div>
@@ -53,11 +57,15 @@
                 </div>
                 <div class="form-item">
                     <label for="horario_entrada">Horario de entrada</label>
-                    <input class="input" type="time" id="horario_entrada" name="horario_entrada">
+                    <input class="input" type="text" id="horario_entrada" name="horario_entrada" placeholder="Ej: 8:00">
                 </div>
                 <div class="form-item">
                     <label for="horario_salida">Horario de salida</label>
-                    <input class="input" type="time" id="horario_salida" name="horario_salida">
+                    <input class="input" type="text" id="horario_salida" name="horario_salida" placeholder="Ej: 20:00">
+                </div>
+                <div class="form-item">
+                    <label for="direccion">Direccion</label>
+                    <input class="input" type="text" id="direccion" name="direccion" placeholder="Ej: Calle 12 de octubre #69 colonia Polanco">
                 </div>
                 <div class="form-item">
                     <label for="servicios">Servicios con los que cuentan</label>
@@ -76,13 +84,18 @@
                 </div>
                 <div class="form-item">
                     <label for="descripcion">Descripcion del restaurant</label>
-                    <input class="input" type="text" id="descripcion" name="descripcion">
+                    <textarea class="input" id="descripcion" name="descripcion" cols="30" rows="5"></textarea>
                 </div>
                 <div class="form-item">
                     <label for="fotos">Fotos del restaurant</label>
                     <input type="file" id="fotos" name="fotos">
                 </div>
-
+                <div class="form-item">
+                    <label for="propietario_restaurant">Nombre del propietario del restaurant</label>
+                    <select name="propietario_restaurant" id="propietario_restaurant">
+                        <!-- TODO: Insertar mediante PHP -->
+                    </select>
+                </div>
                 <button class="boton" type="submit" id="guardar_restaurant">Guardar</button>
             </form>
         </div>
