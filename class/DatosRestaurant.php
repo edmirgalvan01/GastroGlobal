@@ -8,8 +8,8 @@ mysqli_report(MYSQLI_REPORT_ALL & MYSQLI_REPORT_ALL & ~MYSQLI_REPORT_INDEX);
 
 class DatosRestaurant extends Conexion implements Plantilla
 {
-    private $sqlCrear = "INSERT INTO restaurantes(nombre, descripcion, telefono_contacto, direccion, fotos) 
-                            VALUES (?, ?, ?, ?, ?)";
+    private $sqlCrear = "INSERT INTO restaurantes(nombre, descripcion, telefono_contacto, direccion, fotos, email, horario_entrada, horario_salida, especialidad, dias_laboran) 
+                            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     private $sqlModificar = "UPDATE restaurantes SET nombre = ?, descripcion = ? telefono_contacto = ?, direccion = ?, fotos = ?
                             WHERE id = ?";
     private $sqlEliminar = "DELETE FROM restaurantes WHERE id = ?";
@@ -28,12 +28,17 @@ class DatosRestaurant extends Conexion implements Plantilla
         try {
             $consulta = $this->conexion->prepare($this->sqlCrear);
             $consulta->bind_param(
-                'ssiss',
+                'ssisssssss',
                 $objeto->getNombre(),
                 $objeto->getDescripcion(),
                 $objeto->getTelefono_contacto(),
                 $objeto->getDireccion(),
                 $objeto->getFotos(),
+                $objeto->getEmail(),
+                $objeto->getHorarioEntrada(),
+                $objeto->getHorarioSalida(),
+                $objeto->getEspecialidad(),
+                $objeto->getDiasLaboran(),
             );
             $resultado = $consulta->execute();
             return $resultado;
@@ -52,7 +57,11 @@ class DatosRestaurant extends Conexion implements Plantilla
                 $objeto->getTelefono_contacto(),
                 $objeto->getDireccion(),
                 $objeto->getFotos(),
-                $objeto->getId(), //TODO: Preguntar a la maestra sobre el ID
+                $objeto->getId(),
+                $objeto->getHorarioEntrada(),
+                $objeto->getHorarioSalida(),
+                $objeto->getEspecialidad(),
+                $objeto->getDiasLaboran(),
             );
             $resultado = $consulta->execute();
             return $resultado;
@@ -88,6 +97,11 @@ class DatosRestaurant extends Conexion implements Plantilla
                     $fila[3],
                     $fila[4],
                     $fila[5],
+                    $fila[6],
+                    $fila[7],
+                    $fila[8],
+                    $fila[9],
+                    $fila[10],
                 );
                 $restaurant->setId($fila[0]);
                 array_push($restaurantes, $restaurant);
@@ -95,6 +109,8 @@ class DatosRestaurant extends Conexion implements Plantilla
         } catch (mysqli_sql_exception $e) {
             echo $e->getMessage();
         }
+
+        return $restaurantes;
     }
     public function leer($id)
     {
@@ -113,13 +129,18 @@ class DatosRestaurant extends Conexion implements Plantilla
                     $fila[3],
                     $fila[4],
                     $fila[5],
+                    $fila[6],
+                    $fila[7],
+                    $fila[8],
+                    $fila[9],
+                    $fila[10],
                 );
                 $restaurant->setId($fila[0]);
-            } //TODO: Preguntar del return, por ahora no hay nada
-
+            }
         } catch (mysqli_sql_exception $e) {
             echo $e->getMessage();
         }
+        return $restaurant;
     }
     public function buscar($valor)
     {
@@ -139,6 +160,11 @@ class DatosRestaurant extends Conexion implements Plantilla
                     $fila[3],
                     $fila[4],
                     $fila[5],
+                    $fila[6],
+                    $fila[7],
+                    $fila[8],
+                    $fila[9],
+                    $fila[10],
                 );
                 $restaurant->setId($fila[0]);
                 array_push($restaurantes, $restaurant);
@@ -146,5 +172,7 @@ class DatosRestaurant extends Conexion implements Plantilla
         } catch (mysqli_sql_exception $e) {
             echo $e->getMessage();
         }
+
+        return $restaurantes;
     }
 }
