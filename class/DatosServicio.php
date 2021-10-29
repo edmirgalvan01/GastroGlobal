@@ -7,103 +7,105 @@ require_once('Servicio.php');
 
 mysqli_report(MYSQLI_REPORT_ALL & ~MYSQLI_REPORT_INDEX);
 
-class UsuarioDatos extends Conexion implements Plantilla {
+class UsuarioDatos extends Conexion implements Plantilla
+{
 
-    private $sql_insertar="INSERT INTO Servicios(nombre,logo) VALUES(?,?)";
-    private $sql_modificar="UPDATE Servicios SET nombre=?,logo=? WHERE id=?";
-    private $sql_eliminar="DELETE from Servicios WHERE id=?";
-    private $sql_leer="SELECT * FROM Servicios WHERE id=?";
-    private $sql_leerTodo="SELECT * FROM Servicios";
+    private $sql_insertar = "INSERT INTO Servicios(nombre,logo) VALUES(?,?)";
+    private $sql_modificar = "UPDATE Servicios SET nombre=?,logo=? WHERE id=?";
+    private $sql_eliminar = "DELETE from Servicios WHERE id=?";
+    private $sql_leer = "SELECT * FROM Servicios WHERE id=?";
+    private $sql_leerTodo = "SELECT * FROM Servicios";
     private $conexion;
 
 
-    public function __construct(){
-        $this->conexion=$this->conectar();
+    public function __construct()
+    {
+        $this->conexion = $this->conectar();
     }
 
-    public function crear($objeto){
+    public function crear($objeto)
+    {
         try {
-            $consulta=$this->conexion->prepare($this->sql_insertar);
-            $consulta->bind_param('ss',$objeto->getNombre(),$objeto->getLogo());
+            $consulta = $this->conexion->prepare($this->sql_insertar);
+            $consulta->bind_param('ss', $objeto->getNombre(), $objeto->getLogo());
 
-            $resultado=$consulta->execute();
+            $resultado = $consulta->execute();
             return $resultado;
         } catch (mysqli_sql_exception $e) {
             echo $e->getMessage();
         }
-    } 
+    }
 
-    public function modificar($objeto){
+    public function modificar($objeto)
+    {
         try {
-            $consulta=$this->conexion->prepare($this->sql_modificar);
+            $consulta = $this->conexion->prepare($this->sql_modificar);
             $consulta->bind_param(
                 'ssi',
                 $objeto->getNombre(),
                 $objeto->getLogo(),
                 $objeto->getId()
             );
-            
-            $resultado=$consulta->execute();
+
+            $resultado = $consulta->execute();
             return $resultado;
         } catch (mysqli_sql_exception $e) {
             echo $e->getMessage();
         }
     }
 
-    public function eliminar($id){
+    public function eliminar($id)
+    {
         try {
-            $consulta=$this->conexion->prepare($this->sql_eliminar);
-            $consulta->bind_param('i',$id);
-            
-            $resultado=$consulta->execute();
+            $consulta = $this->conexion->prepare($this->sql_eliminar);
+            $consulta->bind_param('i', $id);
+
+            $resultado = $consulta->execute();
             return $resultado;
-            
-        } catch (mysqli_sql_exception $e){
+        } catch (mysqli_sql_exception $e) {
             echo $e->getMessage();
         }
     }
 
-    public function leer($id){
-        $Servicio=null;
+    public function leer($id)
+    {
+        $Servicio = null;
         try {
-            $consulta=$this->conexion->prepare($this->sql_leer);
-            $consulta->bind_param('i',$id);
+            $consulta = $this->conexion->prepare($this->sql_leer);
+            $consulta->bind_param('i', $id);
             $consulta->execute();
-            $resultado=$consulta->get_result();
+            $resultado = $consulta->get_result();
 
-            while($fila=mysqli_fetch_array($resultado)){
-                $Servicio=new Servicio($fila[1],$fila[2]); 
+            while ($fila = mysqli_fetch_array($resultado)) {
+                $Servicio = new Servicio($fila[1], $fila[2]);
                 $Servicio->setId($fila[0]);
             }
-        }catch (mysqli_sql_exception $e) {
-                echo $e->getMessage();       
+        } catch (mysqli_sql_exception $e) {
+            echo $e->getMessage();
         }
         return $Servicio;
     }
 
-    public function leerTodo(){
-        $servicio=null;
-        $servicios=array();
+    public function leerTodo()
+    {
+        $servicio = null;
+        $servicios = array();
 
-        try {   
-            $consulta=$this->conexion->prepare($this->sql_leerTodo);
+        try {
+            $consulta = $this->conexion->prepare($this->sql_leerTodo);
             $consulta->execute();
-            $resultado=$consulta->get_result();
+            $resultado = $consulta->get_result();
 
-            while($fila=mysqli_fetch_array($resultado)){
-                $servicio=new Servicio($fila[1],$fila[2]);
+            while ($fila = mysqli_fetch_array($resultado)) {
+                $servicio = new Servicio($fila[1], $fila[2]);
                 $servicio->setId($fila[0]);
 
-                array_push($servicios,$servicio);
+                array_push($servicios, $servicio);
             }
-
-        }catch (mysqli_sql_exception $e) {
-            echo $e->getMessage();  
+        } catch (mysqli_sql_exception $e) {
+            echo $e->getMessage();
         }
 
         return $servicios;
-
     }
 }
-
-?>

@@ -7,5 +7,3 @@ interface Plantilla {
     public function leerTodo();
     public function leer($id);
 }
-
-?>
