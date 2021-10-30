@@ -42,7 +42,7 @@
             </form>
 
             <h1>Informacion del restaurant</h1>
-            <form action="./script/insertar_restaurant.php" method="post" enctype="multipart/form-data" class="formulario">
+            <form action="./scripts/insertar_restaurant.php" method="post" enctype="multipart/form-data" class="formulario">
                 <div class="form-item">
                     <label for="nombre_restaurant">Nombre</label>
                     <input class="input" type="text" id="nombre_restaurant" name="nombre_restaurant">
@@ -102,6 +102,7 @@
     </main>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/tipos_restaurant.js"></script>
+    <script src="../js/propietario_restaurant.js"></script>
 </body>
 
 </html>
