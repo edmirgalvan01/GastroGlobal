@@ -27,37 +27,26 @@ class DatosRestaurant extends Conexion implements Plantilla
     {
         try {
             $consulta = $this->conexion->prepare($this->sqlCrear);
-
-            $nombre = $objeto->getNombre();
-            $descripcion = $objeto->getDescripcion();
-            $telefono_contacto = $objeto->getTelefono_contacto();
-            $direccion = $objeto->getDireccion();
-            $id_propietario = $objeto->getIdPropietario();
-            $fotos = $objeto->getFotos();
-            $email = $objeto->getEmail();
-            $horario_entrada = $objeto->getHorarioEntrada();
-            $horario_salida = $objeto->getHorarioSalida();
-            $especialidad = $objeto->getEspecialidad();
-            $dias_laboran = $objeto->getDiasLaboran();
-
             $consulta->bind_param(
                 'ssisissssss',
-                $nombre,
-                $descripcion,
-                $telefono_contacto,
-                $direccion,
-                $id_propietario,
-                $fotos,
-                $email,
-                $horario_entrada,
-                $horario_salida,
-                $especialidad,
-                $dias_laboran,
+                $objeto->getNombre(),
+                $objeto->getDescripcion(),
+                $objeto->getTelefono_contacto(),
+                $objeto->getDireccion(),
+                $objeto->getIdPropietario(),
+                $objeto->getFotos(),
+                $objeto->getEmail(),
+                $objeto->getHorarioEntrada(),
+                $objeto->getHorarioSalida(),
+                $objeto->getEspecialidad(),
+                $objeto->getDiasLaboran(),
             );
             $resultado = $consulta->execute();
             return $resultado;
         } catch (mysqli_sql_exception $e) {
             echo $e->getMessage();
+        } finally {
+            $this->desconectar();
         }
     }
     public function modificar($objeto)

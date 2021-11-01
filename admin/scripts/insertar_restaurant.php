@@ -4,7 +4,8 @@ require_once('../../class/DatosRestaurant.php');
 $r = new DatosRestaurant();
 $guardadoFoto = false;
 
-if (!empty($_POST['nombre']) && !empty($_POST['caracteristicas'])) {
+if (!empty($_POST['nombre_restaurant']) && !empty($_POST['dias_laburo'])) {
+    //Si no viene vacio el campo 'foto'
     if (!empty($_FILES['foto'])) {
         $nombreFoto = basename($_FILES['foto']['name']); //del post foto sacaremos el 'name'
         $rutaGuardado = "../../img/" . $nombreFoto;
@@ -15,7 +16,7 @@ if (!empty($_POST['nombre']) && !empty($_POST['caracteristicas'])) {
                 $_POST['telefono_contacto_restaurant'],
                 $_POST['direccion'],
                 $_POST['propietario_restaurant'],
-                $_POST['foto'],
+                $nombreFoto,
                 $_POST['email_restaurant'],
                 $_POST['horario_entrada'],
                 $_POST['horario_salida'],
@@ -43,7 +44,4 @@ if (!empty($_POST['nombre']) && !empty($_POST['caracteristicas'])) {
         );
         $r->crear($restaurant);
     }
-    header('Location: ../../index.php');
-} else {
-    header('Location: ../pagina_admin.php');
 }
