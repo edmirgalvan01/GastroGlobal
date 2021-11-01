@@ -88,7 +88,7 @@
                 </div>
                 <div class="form-item">
                     <label for="fotos">Fotos del restaurant</label>
-                    <input type="file" id="fotos" name="fotos">
+                    <input type="file" class="input" id="foto" placeholder="foto" name="foto">
                 </div>
                 <div class="form-item">
                     <label for="propietario_restaurant">Nombre del propietario del restaurant</label>
