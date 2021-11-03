@@ -32,7 +32,7 @@ class Restaurant
 
     public function setId($id)
     {
-        $this->$id;
+        $this->id = $id;
     }
 
     public function getId()

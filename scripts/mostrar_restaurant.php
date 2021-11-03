@@ -14,7 +14,7 @@ foreach ($restaurantes as $restaurant) {
             <div class="card-body">
                 <h5 class="card-title">' . $restaurant->getNombre() . '</h5>
                 <p class="card-text">' . $restaurant->getEspecialidad() . '</p>
-                <a href="#" class="btn btn-warning">Mas informacion</a>
+                <a href="#" data-id="' . $restaurant->getId() . '" class="btn btn-warning">Mas informacion</a>
             </div>
         </div>
     </div>
