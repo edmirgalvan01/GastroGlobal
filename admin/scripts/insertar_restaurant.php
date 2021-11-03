@@ -44,4 +44,6 @@ if (!empty($_POST['nombre_restaurant']) && !empty($_POST['dias_laburo'])) {
         );
         $r->crear($restaurant);
     }
+
+    header('Location: ../pagina_admin.php');
 }

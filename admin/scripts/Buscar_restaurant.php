@@ -1,14 +1,14 @@
 <?php
- 
- require_once ('../../class/Restaurant.php');
- require_once ('../../class/DatosServicio.php');
 
- $r= new DatosRestaurant();
- $r1= new DatosServicio();  
+require_once('../../class/Restaurant.php');
+require_once('../../class/DatosServicio.php');
 
-$valor="%".$_POST['busqueda']."%";
-$restaurantes=$r->buscar($valor);
-$pagina='<!DOCTYPE html>
+$r = new DatosRestaurant();
+$r1 = new DatosServicio();
+
+$valor = "%" . $_POST['busqueda'] . "%";
+$restaurantes = $r->buscar($valor);
+$pagina = '<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -203,6 +203,3 @@ $pagina='<!DOCTYPE html>
 
 </html>';
 echo $pagina;
-
-
-?>
