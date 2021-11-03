@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -20,11 +19,9 @@
         <img src="img/logo propuesta 1.png" alt="" width="100" height="100">
       </a>
       <form class="d-flex">
-        <input class="form-control me-2 text-center" type="search" placeholder="Busca tu lugar preferido"
-          aria-label="Search">
+        <input class="form-control me-2 text-center" type="search" placeholder="Busca tu lugar preferido" aria-label="Search">
       </form>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -78,104 +75,12 @@
         <div class="row pt-5">
           <h3 class="text-center pb-5 pt-5 h1">Descubre nuevos restaurantes</h3>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-              <img src="img/restaurant1.1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nombre Del Restaurant</h5>
-                <p class="card-text">Especialidad</p>
-                <a href="#" class="btn btn-warning">Mas informacion</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-              <img src="img/restaurant1.1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nombre Del Restaurant</h5>
-                <p class="card-text">Especialidad</p>
-                <a href="#" class="btn btn-warning">Mas informacion</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-              <img src="img/restaurant1.1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nombre Del Restaurant</h5>
-                <p class="card-text">Especialidad</p>
-                <a href="#" class="btn btn-warning">Mas informacion</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-              <img src="img/restaurant1.1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nombre Del Restaurant</h5>
-                <p class="card-text">Especialidad</p>
-                <a href="#" class="btn btn-warning">Mas informacion</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-              <img src="img/restaurant1.1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nombre Del Restaurant</h5>
-                <p class="card-text">Especialidad</p>
-                <a href="#" class="btn btn-warning">Mas informacion</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-              <img src="img/restaurant1.1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nombre Del Restaurant</h5>
-                <p class="card-text">Especialidad</p>
-                <a href="#" class="btn btn-warning">Mas informacion</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-              <img src="img/restaurant1.1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nombre Del Restaurant</h5>
-                <p class="card-text">Especialidad</p>
-                <a href="#" class="btn btn-warning">Mas informacion</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-              <img src="img/restaurant1.1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nombre Del Restaurant</h5>
-                <p class="card-text">Especialidad</p>
-                <a href="#" class="btn btn-warning">Mas informacion</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-              <img src="img/restaurant1.1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Nombre Del Restaurant</h5>
-                <p class="card-text">Especialidad</p>
-                <a href="#" class="btn btn-warning">Mas informacion</a>
-              </div>
-            </div>
-          </div>
+        <div class="row" id="lista_restaurantes">
+          <!-- AQUI IRAN LOS RESTAURANTES INSERTADOS MEDIANTE PHP -->
         </div>
       </div>
     </div>
+  </div>
   </div>
   <!--Ranking-->
   <div>
@@ -328,9 +233,8 @@
         </div>
       </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-      crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/mostrar_restaurant.js"></script>
 </body>
 
 </html>
