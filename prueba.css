@@ -6,6 +6,13 @@ html {
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
+}
+.layout {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 /* HELPERS */
 
@@ -14,7 +21,7 @@ html {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 0 5rem;
+   padding: 10px 5rem;
 }
 .header__logo {
    height: 7rem;
@@ -27,8 +34,8 @@ html {
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
    border-radius: 20px;
    outline: none;
-   padding: 5px 20px;
-   width: 30%;
+   padding: 10px 20px;
+   width: 40%;
 }
 .header__img-user {
    height: 5rem;
@@ -37,3 +44,47 @@ html {
    border-radius: 100%;
 }
 /* HEADER */
+
+/* HOME */
+.home__restaurantes {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px 0;
+}
+.home__restaurantes h1 {
+   font-size: 3rem;
+}
+.list__restaurantes {
+   padding: 20px 0;
+   width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 3rem;
+}
+
+/* CARD */
+.card {
+   width: 30%;
+   background-color: #ffcc29;
+   border-radius: 8px;
+}
+.card__information {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   padding: 20px 10px;
+}
+.card__information h3 {
+   font-size: 2.5rem;
+}
+.card__information p {
+   font-size: 1.5rem;
+}
+.card__information a {
+   font-size: 1.5rem;
+}
+.card__img {
+   width: 100%;
+}
