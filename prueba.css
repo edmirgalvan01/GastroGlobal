@@ -13,24 +13,15 @@ html {
    color: #00af91;
    text-decoration: none;
 }
-
 .logo h1 {
    font-size: 3rem;
 }
-
 .logo h1:first-child {
    color: #ffcc29;
-}
-.layout {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
 }
 .home__title {
    font-size: 3rem;
 }
-
 /* HELPERS */
 
 /* HEADER */
@@ -70,7 +61,7 @@ html {
 }
 /* HEADER */
 
-/* HOME */
+/* FIRST IMG */
 .first-img {
    height: 30vh;
    display: flex;
@@ -79,14 +70,21 @@ html {
    align-items: center;
    text-align: center;
 }
-
 .first-img__title {
    font-size: 4rem;
    background-image: linear-gradient(90deg, #00af91 0%, #ffcc29 100%);
    -webkit-background-clip: text;
    color: transparent;
 }
+/* FIRST IMG */
 
+/* HOME */
+.layout {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
 .home__restaurantes {
    display: flex;
    flex-direction: column;
@@ -102,8 +100,7 @@ html {
    gap: 3rem;
    margin: 5rem 0;
 }
-
-/* CARD */
+/* CARD RESTAURANT */
 .card {
    width: 30%;
    display: flex;
@@ -131,7 +128,8 @@ html {
    width: 50%;
    height: 100%;
 }
-
+/* CARD RESTAURANT */
+/* OWNER */
 .owner {
    width: 100%;
    display: flex;
@@ -162,6 +160,9 @@ html {
 .owner__img {
    width: 50%;
 }
+/* OWNER */
+/* HOME */
+
 /* FOOTER */
 footer {
    display: flex;
@@ -188,3 +189,4 @@ footer {
    height: 40px;
    width: auto;
 }
+/* FOOTER */
