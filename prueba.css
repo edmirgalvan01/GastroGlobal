@@ -15,7 +15,6 @@ html {
    flex-direction: column;
 }
 .home__title {
-   margin-bottom: 3rem;
    font-size: 3rem;
 }
 /* HELPERS */
@@ -41,6 +40,11 @@ html {
    outline: none;
    padding: 10px 20px;
    width: 40%;
+}
+.header__search::placeholder {
+   font-size: 1.3rem;
+   color: #cacaca;
+   font-style: italic;
 }
 .header__img-user {
    height: 5rem;
@@ -72,12 +76,13 @@ html {
    margin: 20px 0;
 }
 .list__restaurantes {
-   padding: 20px 0;
+   padding: 2rem 0;
    width: 80%;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    gap: 3rem;
+   margin: 5rem 0;
 }
 
 /* CARD */
