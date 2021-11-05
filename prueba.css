@@ -68,14 +68,12 @@ html {
 
 /* HOME */
 .first-img {
-   height: 40vh;
+   height: 30vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    text-align: center;
-   /* background-color: #00af91;
-   background-image: linear-gradient(90deg, #00af91 0%, #ffcc29 100%); */
 }
 
 .first-img__title {
