@@ -27,7 +27,7 @@
     <main class="layout">
         <section class="home__restaurantes">
             <h1 class="home__title">Descubre nuevos restaurantes</h1>
-            <section class="list__restaurantes">
+            <section class="list__restaurantes" id="lista_restaurantes">
                 <artictle class="card">
                     <img src="./img/toks.jpg" class="card__img" alt="">
                     <div class="card__information">
@@ -178,6 +178,8 @@
             <a href="#"><img class="social-media__item" src="./img/i-twitter.png" alt=""></a>
         </nav>
     </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/mostrar_restaurant.js"></script>
 </body>
 
 </html>
