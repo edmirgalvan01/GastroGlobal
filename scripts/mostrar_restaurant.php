@@ -8,16 +8,14 @@ $cardRestaurant = "";
 
 foreach ($restaurantes as $restaurant) {
     $cardRestaurant .= '
-    <div class="col-sm">
-        <div class="card w-100 card-border mb-5">
-            <img src="./img/' . $restaurant->getFotos() . '" class="card-img-top" alt="' . $restaurant->getNombre() . '">
-            <div class="card-body">
-                <h5 class="card-title">' . $restaurant->getNombre() . '</h5>
-                <p class="card-text">' . $restaurant->getEspecialidad() . '</p>
-                <a href="#" data-id="' . $restaurant->getId() . '" class="btn btn-warning">Mas informacion</a>
-            </div>
+    <article class="card">
+        <img src="./img/' . $restaurant->getFotos() . '" class="card__img" alt="' . $restaurant->getNombre() . '">
+        <div class="card__information">
+            <h3>' . $restaurant->getNombre() . '</h3>
+            <p>' . $restaurant->getEspecialidad() . '</p>
+            <a href="#">Conoce mas</a>
         </div>
-    </div>
+    </article>
     ';
 }
 

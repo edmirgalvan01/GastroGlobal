@@ -1,42 +1,250 @@
-.card-border{
-    border: solid 4px white;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: all ease-out 0.2s;
+/* HELPERS */
+html {
+   font-size: 10px;
 }
-
-.card-border:hover{
-    transform: scale(1.05);
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Nunito', sans-serif;
 }
-.d-flex input[type = "search"]{
-    border-radius: 24px;
-    width: 400px;
-    border: 2px solid white;
-    box-shadow: 1px 1px 1px grey;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.logo {
+   display: flex;
+   color: #00af91;
+   text-decoration: none;
+}
+.logo h1 {
+   font-size: 3rem;
+}
+.logo h1:first-child {
+   color: #ffcc29;
+}
+.home__title {
+   font-size: 3rem;
+}
+/* HELPERS */
 
- }
- .d-flex button[type = "submit"]{
-    position: absolute;
-    top: 55%;
-    left: 61%;
-    transform: translate(-55%,-61%);
- 
- }
- .d-flex2 button[type = "submit"]{
-    position: absolute;
-    top: 55%;
-    left: 95%;
-    transform: translate(-55%,-61%);
-    border-radius: 100px;
-    border: 2px solid white;
+/* HEADER */
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 5rem;
+   position: sticky;
+   top: 0;
+   background-color: #fff;
+   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+.header__logo {
+   height: 7rem;
+   width: 7rem;
+   object-fit: cover;
+}
+.header__search {
+   border: 1px solid #e2e2e2;
+   box-shadow: 0px 1px 2px rgb(0 0 0 / 8%), 0px 4px 12px rgb(0 0 0 / 5%);
+   border-radius: 20px;
+   outline: none;
+   padding: 15px 30px;
+   width: 40%;
+}
+.header__search::placeholder {
+   font-size: 1.3rem;
+   color: #e2e2e2;
+   font-style: italic;
+}
+.header__img-user {
+   height: 5rem;
+   width: 5rem;
+   object-fit: cover;
+   border-radius: 100%;
+}
+/* HEADER */
 
- }
+/* FIRST IMG */
+.first-img {
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.first-img__title {
+   font-size: 6rem;
+   background-image: linear-gradient(90deg, #00af91 0%, #ffcc29 100%);
+   -webkit-background-clip: text;
+   color: transparent;
+}
+/* FIRST IMG */
 
-.nav navbar{
-    background-color: olivedrab;
-    color: orange;
+/* HOME */
+.layout {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.home__restaurantes {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px 0;
+}
+.list__restaurantes {
+   padding: 2rem 0;
+   width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 3rem;
+   margin: 5rem 0;
+}
+/* CARD RESTAURANT */
+.card {
+   width: 30%;
+   display: flex;
+   gap: 10px;
+}
+.card__information {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 5px;
+   width: 50%;
+   padding: 20px 10px;
+}
+.card__information h3 {
+   font-size: 2rem;
+}
+.card__information p {
+   font-size: 1.5rem;
+}
+.card__information a {
+   font-size: 1.5rem;
+   color: #000;
+}
+.card__img {
+   width: 60%;
+   height: 100%;
+}
+/* CARD RESTAURANT */
+/* OWNER */
+.owner {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+.owner__information {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 50%;
+   gap: 20px;
+}
+.owner__information h1 {
+   font-size: 4rem;
+}
+.owner__information a {
+   background-color: #ffcc29;
+   padding: 10px 30px;
+   font-size: 2rem;
+   text-decoration: none;
+   border-radius: 8px;
+   color: #000;
+}
+.owner__img {
+   width: 50%;
+}
+/* OWNER */
+/* HOME */
+
+/* FOOTER */
+footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 30px 0;
+   gap: 10px;
+}
+.footer__navbar {
+   display: flex;
+   gap: 20px;
+}
+.footer__navbar a {
+   font-size: 1.5rem;
+   color: #000;
+   text-decoration: none;
+}
+.footer__social-media {
+   display: flex;
+   gap: 10px;
+}
+.social-media__item {
+   height: 40px;
+   width: auto;
+}
+/* FOOTER */
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+   .first-img__title {
+      font-size: 4rem;
+   }
+   .card {
+      width: 40%;
+   }
+}
+@media (max-width: 900px) {
+   html {
+      font-size: 8px;
+   }
+   .first-img {
+      height: 20vh;
+   }
+   .owner__information h1 {
+      font-size: 3rem;
+   }
+}
+@media (max-width: 750px) {
+   .header {
+      padding: 10px 5rem;
+   }
+   .header__search {
+      padding: 10px;
+      width: 50%;
+   }
+   .card {
+      flex-direction: column;
+      width: 45%;
+   }
+   .list__restaurantes {
+      width: 90%;
+      justify-content: flex-end;
+   }
+   .card__information {
+      padding: 0;
+   }
+   .social-media__item {
+      height: 20px;
+   }
+}
+@media (max-width: 500px) {
+   html {
+      font-size: 5px;
+   }
+   .first-img {
+      height: 15vh;
+   }
+   .list__restaurantes {
+      width: 100%;
+      justify-content: center;
+   }
+   .card {
+      align-items: center;
+   }
 }
