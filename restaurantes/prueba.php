@@ -173,13 +173,21 @@
         </section>
     </main>
     <footer>
-        <a href="#" class="logo">
+        <div class="logo">
             <h1>G</h1>
             <h1>G</h1>
-        </a>
-        <p>Muchass gracias por ocupar nuestra aplicacion</p>
-        <p>Hecha por: Julio Cesar Ramos Franco y Edmir Galvan Vazquez</p>
-        <a href="#">Inicio</a>
+        </div>
+        <nav class="footer__navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Restaurantes</a>
+        </nav>
+        <nav class="footer__social-media">
+            <a href="#"><img class="social-media__item" src="./img/i-facebook.png" alt=""></a>
+            <a href="#"><img class="social-media__item" src="./img/i-instagram.png" alt=""></a>
+            <a href="#"><img class="social-media__item" src="./img/i-twitter.png" alt=""></a>
+        </nav>
     </footer>
 </body>
 

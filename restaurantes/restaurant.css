@@ -76,12 +76,13 @@ html {
 }
 
 .titulo {
-   font-size: 2rem;
+   font-size: 3rem;
    margin-bottom: 20px;
 }
 
 .titulos p {
    color: #c2c2c2;
+   font-size: 1.5rem;
 }
 /* RESTAURANT-TITULOS */
 
@@ -116,11 +117,12 @@ html {
 
 .descripcion-horario {
    color: #c2c2c2;
+   font-size: 1.5rem;
 }
 
 .descripcion {
    line-height: 30px;
-   font-size: 1rem;
+   font-size: 1.5rem;
 }
 
 .servicios {
@@ -138,7 +140,7 @@ html {
 }
 
 .servicio-item p {
-   font-size: 1rem;
+   font-size: 1.5rem;
 }
 /* RESTAURANT-DESCRIPCION-SERVICIOS */
 
@@ -177,12 +179,12 @@ html {
 }
 
 .datos-usuario-contenido p {
-   font-size: 1rem;
+   font-size: 1.2rem;
 }
 
 .contenido-opinion {
    line-height: 25px;
-   font-size: 1rem;
+   font-size: 1.5rem;
 }
 /* OPINION */
 .crear-opinion {
@@ -219,23 +221,28 @@ html {
 
 /* FOOTER */
 footer {
-   padding: 20px 50px;
    display: flex;
    flex-direction: column;
-   justify-content: center;
    align-items: center;
-   background-color: #c2c2c2;
+   padding: 30px 0;
    gap: 10px;
 }
-footer p {
-   font-size: 1rem;
-   text-align: center;
-   color: #000;
+.footer__navbar {
+   display: flex;
+   gap: 20px;
 }
-
-footer a {
+.footer__navbar a {
+   font-size: 1.5rem;
    color: #000;
-   font-size: 15px;
+   text-decoration: none;
+}
+.footer__social-media {
+   display: flex;
+   gap: 10px;
+}
+.social-media__item {
+   height: 40px;
+   width: auto;
 }
 /* FOOTER */
 
