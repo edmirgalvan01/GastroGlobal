@@ -47,127 +47,23 @@
                         iusto quisquam praesentium sapiente iure veniam dolores sequi. Ex libero at ad explicabo culpa
                         maiores nulla vero, eveniet numquam pariatur.</p>
                 </div>
-                <div class="servicios">
-                    <div class="servicio-item">
-                        <img src="../img/i-nofumar.png" alt="">
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="servicio-item">
-                        <img src="../img/i-nofumar.png" alt="">
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="servicio-item">
-                        <img src="../img/i-nofumar.png" alt="">
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="servicio-item">
-                        <img src="../img/i-nofumar.png" alt="">
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="servicio-item">
-                        <img src="../img/i-nofumar.png" alt="">
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="servicio-item">
-                        <img src="../img/i-nofumar.png" alt="">
-                        <p>Descripcion del servicio</p>
-                    </div>
+                <div class="servicios" id="lista_servicios">
+                    <!-- INSERTAR CON PHP -->
                 </div>
             </div>
             <div class="opiniones">
                 <h1 class="titulo">Opiniones</h1>
-                <div class="lista-opiniones">
-                    <div class="opinion-item">
-                        <div class="datos-usuario">
-                            <img src="../img/img-perfil.jpg" class="imagen-usuario">
-                            <div class="datos-usuario-contenido">
-                                <p class="nombre-usuario">Roxana Rodriguez</p>
-                                <p class="fecha-opinion">12 / 12/ 2020</p>
-                            </div>
-                        </div>
-                        <p class="contenido-opinion">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias cupiditate aut,
-                            perspiciatis, delectus repudiandae rem ullam quidem ad perferendis corrupti pariatur?
-                            Veritatis suscipit iure dicta saepe id voluptas cupiditate. Dicta.
-                        </p>
-                    </div>
-                    <div class="opinion-item">
-                        <div class="datos-usuario">
-                            <img src="../img/img-perfil.jpg" class="imagen-usuario">
-                            <div class="datos-usuario-contenido">
-                                <p class="nombre-usuario">Roxana Rodriguez</p>
-                                <p class="fecha-opinion">12 / 12/ 2020</p>
-                            </div>
-                        </div>
-                        <p class="contenido-opinion">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias cupiditate aut,
-                            perspiciatis, delectus repudiandae rem ullam quidem ad perferendis corrupti pariatur?
-                            Veritatis suscipit iure dicta saepe id voluptas cupiditate. Dicta.
-                        </p>
-                    </div>
-                    <div class="opinion-item">
-                        <div class="datos-usuario">
-                            <img src="../img/img-perfil.jpg" class="imagen-usuario">
-                            <div class="datos-usuario-contenido">
-                                <p class="nombre-usuario">Roxana Rodriguez</p>
-                                <p class="fecha-opinion">12 / 12/ 2020</p>
-                            </div>
-                        </div>
-                        <p class="contenido-opinion">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias cupiditate aut,
-                            perspiciatis, delectus repudiandae rem ullam quidem ad perferendis corrupti pariatur?
-                            Veritatis suscipit iure dicta saepe id voluptas cupiditate. Dicta.
-                        </p>
-                    </div>
-                    <div class="opinion-item">
-                        <div class="datos-usuario">
-                            <img src="../img/img-perfil.jpg" class="imagen-usuario">
-                            <div class="datos-usuario-contenido">
-                                <p class="nombre-usuario">Roxana Rodriguez</p>
-                                <p class="fecha-opinion">12 / 12/ 2020</p>
-                            </div>
-                        </div>
-                        <p class="contenido-opinion">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias cupiditate aut,
-                            perspiciatis, delectus repudiandae rem ullam quidem ad perferendis corrupti pariatur?
-                            Veritatis suscipit iure dicta saepe id voluptas cupiditate. Dicta.
-                        </p>
-                    </div>
-                    <div class="opinion-item">
-                        <div class="datos-usuario">
-                            <img src="../img/img-perfil.jpg" class="imagen-usuario">
-                            <div class="datos-usuario-contenido">
-                                <p class="nombre-usuario">Roxana Rodriguez</p>
-                                <p class="fecha-opinion">12 / 12/ 2020</p>
-                            </div>
-                        </div>
-                        <p class="contenido-opinion">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias cupiditate aut,
-                            perspiciatis, delectus repudiandae rem ullam quidem ad perferendis corrupti pariatur?
-                            Veritatis suscipit iure dicta saepe id voluptas cupiditate. Dicta.
-                        </p>
-                    </div>
-                    <div class="opinion-item">
-                        <div class="datos-usuario">
-                            <img src="../img/img-perfil.jpg" class="imagen-usuario">
-                            <div class="datos-usuario-contenido">
-                                <p class="nombre-usuario">Roxana Rodriguez</p>
-                                <p class="fecha-opinion">12 / 12/ 2020</p>
-                            </div>
-                        </div>
-                        <p class="contenido-opinion">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias cupiditate aut,
-                            perspiciatis, delectus repudiandae rem ullam quidem ad perferendis corrupti pariatur?
-                            Veritatis suscipit iure dicta saepe id voluptas cupiditate. Dicta.
-                        </p>
-                    </div>
+                <div class="lista-opiniones" id="lista_opiniones">
+                    <!-- INSERTAR CON PHP -->
                     <a href="../pagina-inicio-sesion/inicio-sesion.html" class="crear-opinion">Crear opinion</a>
                 </div>
             </div>
             <div class="ubicacion">
                 <h1 class="titulo">Ubicacion</h1>
                 <div class="mapa-restaurant">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29893.420121382762!2d-97.4450015218262!3d20.51944205250554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da6a86ae309d99%3A0xd32b621a3b5e5865!2sCBTis%20No.%2078!5e0!3m2!1ses-419!2smx!4v1634140789665!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29893.420121382762!2d-97.4450015218262!3d20.51944205250554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da6a86ae309d99%3A0xd32b621a3b5e5865!2sCBTis%20No.%2078!5e0!3m2!1ses-419!2smx!4v1634140789665!5m2!1ses-419!2smx"
+                        allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </section>
