@@ -64,7 +64,7 @@ html {
 
 .search__results--activate {
    background-color: red;
-   height: 300px;
+   height: 30vh;
    width: 100%;
    transition: all 1s ease-out;
 }
