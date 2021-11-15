@@ -18,7 +18,13 @@
             <h1>G</h1>
             <h1>G</h1>
         </div>
-        <input type="text" class="header__search" placeholder="Busca tu lugar preferido...">
+        <div class="header__search">
+            <input type="text" id="input__search" class="header__search--input" placeholder="Busca tu lugar preferido...">
+            <div class="search__results--default" id="search__results">
+                <!-- TODO: Agregar mediante script -->
+                <!-- ACTIVAR MEDIANTE JS -->
+            </div>
+        </div>
         <img src="./img/img-perfil.jpg" alt="" class="header__img-user">
     </header>
     <div class="first-img">
@@ -62,6 +68,8 @@
     </footer>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/mostrar_restaurant.js"></script>
+    <script src="./js/busqueda_rest.js"></script>
+    <script src="./js/barra-busqueda.js"></script>
 </body>
 
 </html>
