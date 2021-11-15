@@ -79,11 +79,13 @@ html {
    color: #000;
    gap: 1rem;
    align-items: center;
+   margin-bottom: 1rem;
 }
 
 .results__item--img {
    height: 5rem;
-   width: auto;
+   width: 6rem;
+   object-fit: cover;
 }
 
 .header__img-user {

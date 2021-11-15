@@ -19,13 +19,9 @@
             <h1>G</h1>
         </div>
         <div class="header__search">
-            <input type="text" id="input__search" class="header__search--input"
-                placeholder="Busca tu lugar preferido...">
+            <input type="text" id="input__search" class="header__search--input" placeholder="Busca tu lugar preferido...">
             <div class="search__results--default" id="search__results">
-                <a href="#" class="results__item">
-                    <img src="./img/defaultRestaurant.jpg" class="results__item--img" alt="">
-                    <p class="results__item--name">Toks</p>
-                </a>
+                <!-- TODO: Agregar mediante script -->
                 <!-- ACTIVAR MEDIANTE JS -->
             </div>
         </div>
@@ -72,6 +68,7 @@
     </footer>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/mostrar_restaurant.js"></script>
+    <script src="./js/busqueda_rest.js"></script>
     <script src="./js/barra-busqueda.js"></script>
 </body>
 
