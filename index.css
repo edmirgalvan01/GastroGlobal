@@ -62,11 +62,20 @@ html {
    font-style: italic;
 }
 
+.search__results--default {
+   display: none;
+}
+
 .search__results--activate {
    background-color: red;
    height: 30vh;
    width: 100%;
    transition: all 1s ease-out;
+}
+
+.results__item--img {
+   height: 40px;
+   width: auto;
 }
 
 .header__img-user {
