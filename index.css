@@ -67,14 +67,22 @@ html {
 }
 
 .search__results--activate {
-   background-color: red;
-   height: 30vh;
+   background-color: #e9e8e83f;
+   padding: 2rem;
    width: 100%;
-   transition: all 1s ease-out;
+}
+
+.results__item {
+   display: flex;
+   text-decoration: none;
+   font-size: 1.5rem;
+   color: #000;
+   gap: 1rem;
+   align-items: center;
 }
 
 .results__item--img {
-   height: 40px;
+   height: 5rem;
    width: auto;
 }
 
