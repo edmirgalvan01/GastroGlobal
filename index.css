@@ -46,6 +46,7 @@ html {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   gap: 10px;
 }
 .header__search--input {
    border: 1px solid #e2e2e2;
@@ -60,29 +61,14 @@ html {
    color: #e2e2e2;
    font-style: italic;
 }
-.header__search--results {
-   display: none;
-   position: relative;
+
+.search__results--activate {
    background-color: red;
+   height: 300px;
    width: 100%;
-   list-style: none;
-   padding: 10px 30px;
-   /* display: flex; */
-   flex-direction: column;
-   gap: 10px;
+   transition: all 1s ease-out;
 }
-.search__results--a {
-   text-decoration: none;
-   color: #000;
-   font-size: 1.3rem;
-   display: flex;
-   align-items: center;
-   gap: 10px;
-}
-.search__results--img {
-   height: 4rem;
-   width: auto;
-}
+
 .header__img-user {
    height: 5rem;
    width: 5rem;
