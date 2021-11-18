@@ -14,4 +14,5 @@ $direccion = $restaurant->getDireccion();
 $telefono_contacto = $restaurant->getTelefono_contacto();
 $especialidad = $restaurant->getEspecialidad();
 
-echo $horario; //TODO: Investigar retorno de variables
+$informacion = array($nombre, $foto, $descripcion, $horario, $direccion, $telefono_contacto, $especialidad);
+echo json_encode($informacion);

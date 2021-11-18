@@ -24,28 +24,16 @@
     <main class="main">
         <section class="container">
             <div class="titulos">
-                <h1 class="titulo">Nombre del restaurant</h1>
-                <p>315 opiniones realizadas / 3.5 estrellas</p>
+                <h1 class="titulo" id="titulo"></h1>
+                <p id="especialidad"></p>
             </div>
             <div class="fotos-restaurant">
-                <img src="" alt="">
+                <img id="foto_restaurant" src="" alt="">
             </div>
             <div class="descripcion-servicios">
                 <div class="textos-descripcion">
-                    <p class="descripcion-horario">Lunes a Viernes 9:00 - 18:00</p>
-                    <p class="descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi eaque
-                        dolores nesciunt numquam
-                        assumenda aspernatur labore perferendis amet tenetur praesentium? Mollitia veniam impedit dolore
-                        expedita, modi iusto blanditiis repellendus quia ex, sint ipsam vel in a illum aut excepturi
-                        dolor
-                        pariatur amet quisquam accusamus suscipit quo. Tempora rerum sunt repellat doloremque aut
-                        sapiente
-                        fugit, cum nihil tempore suscipit esse beatae velit? Veniam, accusantium dolores? Sunt quaerat
-                        in
-                        tempora commodi natus tenetur laudantium repudiandae, nulla est corporis amet nihil aut
-                        aspernatur
-                        iusto quisquam praesentium sapiente iure veniam dolores sequi. Ex libero at ad explicabo culpa
-                        maiores nulla vero, eveniet numquam pariatur.</p>
+                    <p class="descripcion-horario" id="horario"></p>
+                    <p class="descripcion" id="descripcion"></p>
                 </div>
                 <div class="servicios">
                     <div class="servicio-item">
