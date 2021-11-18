@@ -28,7 +28,7 @@
                 <p>315 opiniones realizadas / 3.5 estrellas</p>
             </div>
             <div class="fotos-restaurant">
-                <img src="../img/restaurant1.jpg" alt="">
+                <img src="" alt="">
             </div>
             <div class="descripcion-servicios">
                 <div class="textos-descripcion">
@@ -49,27 +49,27 @@
                 </div>
                 <div class="servicios">
                     <div class="servicio-item">
-                        <img src="../img/i-nofumar.png" alt="">
+                        <img src="" alt="">
                         <p>Descripcion del servicio</p>
                     </div>
                     <div class="servicio-item">
-                        <img src="../img/i-nofumar.png" alt="">
+                        <img src="" alt="">
                         <p>Descripcion del servicio</p>
                     </div>
                     <div class="servicio-item">
-                        <img src="../img/i-nofumar.png" alt="">
+                        <img src="" alt="">
                         <p>Descripcion del servicio</p>
                     </div>
                     <div class="servicio-item">
-                        <img src="../img/i-nofumar.png" alt="">
+                        <img src="" alt="">
                         <p>Descripcion del servicio</p>
                     </div>
                     <div class="servicio-item">
-                        <img src="../img/i-nofumar.png" alt="">
+                        <img src="" alt="">
                         <p>Descripcion del servicio</p>
                     </div>
                     <div class="servicio-item">
-                        <img src="../img/i-nofumar.png" alt="">
+                        <img src="" alt="">
                         <p>Descripcion del servicio</p>
                     </div>
                 </div>
@@ -181,6 +181,8 @@
         <p>Hecha por: Julio Cesar Ramos Franco y Edmir Galvan Vazquez</p>
         <a href="#">Inicio</a>
     </footer>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src='../js/pagina_restaurant.js'></script>
 </body>
 
 </html>
