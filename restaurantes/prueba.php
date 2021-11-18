@@ -24,7 +24,7 @@
     <main class="main">
         <section class="container">
             <div class="titulos">
-                <h1 class="titulo" id="titulo"></h1>
+                <h1 class="titulo" id="nombre"></h1>
                 <p id="especialidad"></p>
             </div>
             <div class="fotos-restaurant">
