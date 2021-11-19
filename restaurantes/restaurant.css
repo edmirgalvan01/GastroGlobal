@@ -17,6 +17,7 @@ html {
    padding: 20px 5rem;
    position: sticky;
    top: 0;
+   height: 10vh;
    background-color: #fff;
    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
@@ -57,67 +58,62 @@ html {
 }
 /* HEADER */
 
-/* RESTAURANT */
+/* MAIN */
 .main {
+   height: 90vh;
    display: flex;
    flex-direction: column;
-   align-items: center;
    justify-content: center;
-   margin-top: 2rem;
+   align-items: center;
 }
 .container {
-   width: 90%;
-}
-/* RESTAURANT-TITULOS */
-.titulos {
-   display: flex;
-   flex-direction: column;
-   gap: 1rem;
-}
-.titulo {
-   font-size: 4rem;
-}
-.especialidad {
-   font-size: 2rem;
-   color: #c2c2c2;
-}
-/* RESTAURANT-TITULOS */
-
-/* RESTAURANT-FOTOS */
-.fotos-restaurant {
-   padding: 10px 0;
-   display: flex;
-   gap: 5px;
-   height: 90vh;
-   margin-bottom: 20px;
-}
-.foto-restaurant img {
-   width: 100%;
-   height: auto;
-   object-fit: cover;
-}
-/* RESTAURANT-FOTOS */
-
-/* RESTAURANT-DESCRIPCION-SERVICIOS */
-.descripcion {
-   display: flex;
-   gap: 10px;
-   margin-bottom: 20px;
-}
-.textos-descripcion {
+   width: 90vw;
    display: flex;
    flex-direction: column;
    gap: 2rem;
 }
-.descripcion-horario {
-   color: #c2c2c2;
+.titles {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
 }
-.descripcion {
-   line-height: 4rem;
+.title {
+   font-size: 4rem;
+}
+.speciality {
+   font-size: 2rem;
+   color: #e2e2e2;
+}
+.info {
+   display: flex;
+}
+.info__picture {
+   width: 50%;
+}
+.info__picture img {
+   width: 100%;
+   height: auto;
+}
+.info__description {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+}
+.info__items {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   gap: 2rem;
+   height: 100%;
+   width: 50%;
+}
+.info__item--title {
    font-size: 2rem;
 }
-/* RESTAURANT-DESCRIPCION */
-
+.info__item--text {
+   font-size: 1.5rem;
+}
 /* FOOTER */
 footer {
    padding: 20px 50px;
@@ -139,52 +135,3 @@ footer a {
    font-size: 15px;
 }
 /* FOOTER */
-
-/* RESPONSIVE */
-@media screen and (max-width: 800px) {
-   html {
-      font-size: 13px;
-   }
-   .textos-descripcion {
-      width: 100%;
-   }
-}
-
-@media screen and (max-width: 600px) {
-   .fotos-restaurant {
-      flex-wrap: wrap;
-      justify-content: center;
-   }
-   .fotos-restaurant img {
-      width: 45%;
-   }
-}
-
-@media screen and (max-width: 400px) {
-   html {
-      font-size: 11px;
-   }
-}
-
-.informacion {
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-}
-.informacion__items {
-   display: grid;
-   grid-template-columns: 50% 50%;
-   grid-template-rows: 50% 50%;
-   gap: 2rem;
-}
-.informacion__item {
-   text-align: center;
-}
-.informacion__item p {
-   font-size: 2rem;
-}
-.icon {
-   width: 5rem;
-   height: 5rem;
-   object-fit: contain;
-}

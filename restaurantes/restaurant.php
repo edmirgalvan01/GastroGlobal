@@ -23,46 +23,46 @@
     </header>
     <main class="main">
         <section class="container">
-            <div class="titulos">
-                <h1 class="titulo" id="nombre"></h1>
-                <p class='especialidad' id="especialidad"></p>
+            <div class="titles">
+                <h1 class="title" id="nombre"></h1>
+                <p class='speciality' id="especialidad"></p>
             </div>
-            <section class="content__info">
-                <div class="foto__restaurant">
+            <section class="info">
+                <div class="info__picture">
                     <img id="foto_restaurant" src="" alt="">
                 </div>
-                <div class="informacion">
-                    <div class="informacion__items">
-                        <div class="informacion__item">
-                            <p>Nombre</p>
-                            <p id="nombre_informacion"></p>
+                <div class="info__description">
+                    <div class="info__items">
+                        <div class="info__item">
+                            <h1 class="info__item--title">Nombre</h1>
+                            <p class="info__item--text" id="nombre_informacion"></p>
                         </div>
-                        <div class="informacion__item">
-                            <p>Especialidad</p>
-                            <p id="especialidad_informacion"></p>
+                        <div class="info__item">
+                            <h1 class="info__item--title">Especialidad</h1>
+                            <p class="info__item--text" id="especialidad_informacion"></p>
                         </div>
-                        <div class="informacion__item">
-                            <p>Descripcion</p>
-                            <p id="descripcion_informacion"></p>
+                        <div class="info__item">
+                            <h1 class="info__item--title">Descripcion</h1>
+                            <p class="info__item--text" id="descripcion_informacion"></p>
                         </div>
-                        <div class="informacion__item">
-                            <p>Direccion</p>
-                            <p id="direccion_informacion"></p>
+                        <div class="info__item">
+                            <h1 class="info__item--title">Direccion</h1>
+                            <p class="info__item--text" id="direccion_informacion"></p>
                         </div>
-                        <div class="informacion__item">
-                            <p>Horario</p>
-                            <p id="horario_informacion"></p>
+                        <div class="info__item">
+                            <h1 class="info__item--title">Horario</h1>
+                            <p class="info__item--text" id="horario_informacion"></p>
                         </div>
-                        <div class="informacion__item">
-                            <p>Numero de telefono</p>
-                            <p id="numeroTelefono_informacion"></p>
+                        <div class="info__item">
+                            <h1 class="info__item--title">Numero de telefono</h1>
+                            <p class="info__item--text" id="numeroTelefono_informacion"></p>
                         </div>
                     </div>
                 </div>
             </section>
         </section>
     </main>
-    <footer>
+    <!-- <footer>
         <a href="#" class="logo">
             <h1>G</h1>
             <h1>G</h1>
@@ -70,7 +70,7 @@
         <p>Muchass gracias por ocupar nuestra aplicacion</p>
         <p>Hecha por: Julio Cesar Ramos Franco y Edmir Galvan Vazquez</p>
         <a href="#">Inicio</a>
-    </footer>
+    </footer> -->
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src='../js/pagina_restaurant.js'></script>
 </body>
