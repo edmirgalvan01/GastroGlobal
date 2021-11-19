@@ -91,7 +91,7 @@ html {
    height: 90vh;
    margin-bottom: 20px;
 }
-.fotos-restaurant img {
+.foto-restaurant img {
    width: 100%;
    height: auto;
    object-fit: cover;

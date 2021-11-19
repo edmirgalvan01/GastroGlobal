@@ -13,9 +13,15 @@ $(document).ready(function () {
       var telefono_contacto = informacion[5];
       var especialidad = informacion[6];
       $('#nombre').text(nombre);
-      $('#foto_restaurant').attr('src', '../img/' + foto);
       $('#especialidad').text(especialidad);
+      $('#foto_restaurant').attr('src', '../img/' + foto);
+
+      $('#nombre_informacion').text(nombre);
+      $('#especialidad_informacion').text(especialidad);
       $('#horario').text(horario);
-      $('#descripcion').text(descripcion);
+      $('#descripcion_informacion').text(descripcion);
+      $('#direccion_informacion').text(direccion);
+      $('#horario_informacion').text(horario);
+      $('#numeroTelefono_informacion').text(telefono_contacto);
    });
 });
