@@ -25,137 +25,36 @@
         <section class="container">
             <div class="titulos">
                 <h1 class="titulo" id="nombre"></h1>
-                <p id="especialidad"></p>
+                <p class='especialidad' id="especialidad"></p>
             </div>
             <div class="fotos-restaurant">
                 <img id="foto_restaurant" src="" alt="">
             </div>
-            <div class="descripcion-servicios">
+            <div class="descripcion">
                 <div class="textos-descripcion">
                     <p class="descripcion-horario" id="horario"></p>
                     <p class="descripcion" id="descripcion"></p>
                 </div>
-                <div class="servicios">
-                    <div class="servicio-item">
-                        <img src="" alt="">
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="servicio-item">
-                        <img src="" alt="">
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="servicio-item">
-                        <img src="" alt="">
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="servicio-item">
-                        <img src="" alt="">
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="servicio-item">
-                        <img src="" alt="">
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="servicio-item">
-                        <img src="" alt="">
-                        <p>Descripcion del servicio</p>
-                    </div>
-                </div>
             </div>
-            <div class="opiniones">
-                <h1 class="titulo">Opiniones</h1>
-                <div class="lista-opiniones">
-                    <div class="opinion-item">
-                        <div class="datos-usuario">
-                            <img src="../img/img-perfil.jpg" class="imagen-usuario">
-                            <div class="datos-usuario-contenido">
-                                <p class="nombre-usuario">Roxana Rodriguez</p>
-                                <p class="fecha-opinion">12 / 12/ 2020</p>
-                            </div>
-                        </div>
-                        <p class="contenido-opinion">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias cupiditate aut,
-                            perspiciatis, delectus repudiandae rem ullam quidem ad perferendis corrupti pariatur?
-                            Veritatis suscipit iure dicta saepe id voluptas cupiditate. Dicta.
-                        </p>
+            <div class="informacion">
+                <h1 class="titulo">Informacion general</h1>
+                <div class="informacion__items">
+                    <div class="informacion__item">
+                        <img class='icon' src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-map-point-real-estate-flatart-icons-outline-flatarticons-1.png" />
+                        <p>Numero de telefono</p>
                     </div>
-                    <div class="opinion-item">
-                        <div class="datos-usuario">
-                            <img src="../img/img-perfil.jpg" class="imagen-usuario">
-                            <div class="datos-usuario-contenido">
-                                <p class="nombre-usuario">Roxana Rodriguez</p>
-                                <p class="fecha-opinion">12 / 12/ 2020</p>
-                            </div>
-                        </div>
-                        <p class="contenido-opinion">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias cupiditate aut,
-                            perspiciatis, delectus repudiandae rem ullam quidem ad perferendis corrupti pariatur?
-                            Veritatis suscipit iure dicta saepe id voluptas cupiditate. Dicta.
-                        </p>
+                    <div class="informacion__item">
+                        <img class='icon' src="https://img.icons8.com/ios-glyphs/30/000000/phone-squared.png" />
+                        <p>Numero de telefono</p>
                     </div>
-                    <div class="opinion-item">
-                        <div class="datos-usuario">
-                            <img src="../img/img-perfil.jpg" class="imagen-usuario">
-                            <div class="datos-usuario-contenido">
-                                <p class="nombre-usuario">Roxana Rodriguez</p>
-                                <p class="fecha-opinion">12 / 12/ 2020</p>
-                            </div>
-                        </div>
-                        <p class="contenido-opinion">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias cupiditate aut,
-                            perspiciatis, delectus repudiandae rem ullam quidem ad perferendis corrupti pariatur?
-                            Veritatis suscipit iure dicta saepe id voluptas cupiditate. Dicta.
-                        </p>
+                    <div class="informacion__item">
+                        <img class='icon' src="https://img.icons8.com/ios-glyphs/30/000000/phone-squared.png" />
+                        <p>Numero de telefono</p>
                     </div>
-                    <div class="opinion-item">
-                        <div class="datos-usuario">
-                            <img src="../img/img-perfil.jpg" class="imagen-usuario">
-                            <div class="datos-usuario-contenido">
-                                <p class="nombre-usuario">Roxana Rodriguez</p>
-                                <p class="fecha-opinion">12 / 12/ 2020</p>
-                            </div>
-                        </div>
-                        <p class="contenido-opinion">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias cupiditate aut,
-                            perspiciatis, delectus repudiandae rem ullam quidem ad perferendis corrupti pariatur?
-                            Veritatis suscipit iure dicta saepe id voluptas cupiditate. Dicta.
-                        </p>
+                    <div class="informacion__item">
+                        <img class='icon' src="https://img.icons8.com/ios-glyphs/30/000000/phone-squared.png" />
+                        <p>Numero de telefono</p>
                     </div>
-                    <div class="opinion-item">
-                        <div class="datos-usuario">
-                            <img src="../img/img-perfil.jpg" class="imagen-usuario">
-                            <div class="datos-usuario-contenido">
-                                <p class="nombre-usuario">Roxana Rodriguez</p>
-                                <p class="fecha-opinion">12 / 12/ 2020</p>
-                            </div>
-                        </div>
-                        <p class="contenido-opinion">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias cupiditate aut,
-                            perspiciatis, delectus repudiandae rem ullam quidem ad perferendis corrupti pariatur?
-                            Veritatis suscipit iure dicta saepe id voluptas cupiditate. Dicta.
-                        </p>
-                    </div>
-                    <div class="opinion-item">
-                        <div class="datos-usuario">
-                            <img src="../img/img-perfil.jpg" class="imagen-usuario">
-                            <div class="datos-usuario-contenido">
-                                <p class="nombre-usuario">Roxana Rodriguez</p>
-                                <p class="fecha-opinion">12 / 12/ 2020</p>
-                            </div>
-                        </div>
-                        <p class="contenido-opinion">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias cupiditate aut,
-                            perspiciatis, delectus repudiandae rem ullam quidem ad perferendis corrupti pariatur?
-                            Veritatis suscipit iure dicta saepe id voluptas cupiditate. Dicta.
-                        </p>
-                    </div>
-                    <a href="../pagina-inicio-sesion/inicio-sesion.html" class="crear-opinion">Crear opinion</a>
-                </div>
-            </div>
-            <div class="ubicacion">
-                <h1 class="titulo">Ubicacion</h1>
-                <div class="mapa-restaurant">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29893.420121382762!2d-97.4450015218262!3d20.51944205250554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da6a86ae309d99%3A0xd32b621a3b5e5865!2sCBTis%20No.%2078!5e0!3m2!1ses-419!2smx!4v1634140789665!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </section>

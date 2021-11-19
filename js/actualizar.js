@@ -3,7 +3,7 @@ $(document).on('click', '#update_restaurant', function () {
    $.ajax({
       type: 'post',
       url: 'script/modificar_rest.php',
-      data: {}, // falta agregar los datos
+      data: {}, // TODO: falta agregar los datos
       contentType: false,
       processData: false,
    }).done(function (rest) {});

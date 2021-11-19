@@ -2,7 +2,6 @@ html {
    scroll-behavior: smooth;
    font-size: 10px;
 }
-
 * {
    margin: 0;
    padding: 0;
@@ -64,8 +63,8 @@ html {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   margin-top: 2rem;
 }
-
 .container {
    width: 90%;
 }
@@ -73,14 +72,13 @@ html {
 .titulos {
    display: flex;
    flex-direction: column;
+   gap: 1rem;
 }
-
 .titulo {
-   font-size: 2rem;
-   margin-bottom: 20px;
+   font-size: 4rem;
 }
-
-.titulos p {
+.especialidad {
+   font-size: 2rem;
    color: #c2c2c2;
 }
 /* RESTAURANT-TITULOS */
@@ -90,132 +88,35 @@ html {
    padding: 10px 0;
    display: flex;
    gap: 5px;
-   height: calc(100vh - 10px);
+   height: 90vh;
    margin-bottom: 20px;
 }
 .fotos-restaurant img {
-   width: 25%;
+   width: 100%;
    height: auto;
    object-fit: cover;
 }
 /* RESTAURANT-FOTOS */
 
 /* RESTAURANT-DESCRIPCION-SERVICIOS */
-.descripcion-servicios {
+.descripcion {
    display: flex;
    gap: 10px;
    margin-bottom: 20px;
 }
-
 .textos-descripcion {
    display: flex;
    flex-direction: column;
-   gap: 20px;
-   width: 50%;
+   gap: 2rem;
 }
-
 .descripcion-horario {
    color: #c2c2c2;
 }
-
 .descripcion {
-   line-height: 30px;
-   font-size: 1rem;
+   line-height: 4rem;
+   font-size: 2rem;
 }
-
-.servicios {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 50%;
-   gap: 10px;
-   flex-wrap: wrap;
-}
-
-.servicio-item {
-   width: 40%;
-   padding: 5px 10px;
-}
-
-.servicio-item p {
-   font-size: 1rem;
-}
-/* RESTAURANT-DESCRIPCION-SERVICIOS */
-
-/* OPINIONES */
-.opiniones {
-   margin-bottom: 20px;
-}
-
-.lista-opiniones {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
-   gap: 20px;
-}
-/* OPINION */
-.opinion-item {
-   width: 30%;
-   padding: 10px;
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
-}
-
-.datos-usuario {
-   display: flex;
-}
-
-.imagen-usuario {
-   width: 40px;
-   height: 40px;
-   border-radius: 100%;
-   object-fit: cover;
-   margin-right: 10px;
-}
-
-.datos-usuario-contenido p {
-   font-size: 1rem;
-}
-
-.contenido-opinion {
-   line-height: 25px;
-   font-size: 1rem;
-}
-/* OPINION */
-.crear-opinion {
-   padding: 15px 30px;
-   border: none;
-   background-color: #ffcc29;
-   color: #000;
-   font-size: 17px;
-   border-radius: 8px;
-   font-weight: bold;
-   text-decoration: none;
-   cursor: pointer;
-}
-/* OPINIONES */
-
-/* UBICACION */
-.ubicacion {
-   margin-bottom: 20px;
-}
-.mapa-restaurant {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-.ubicacion iframe {
-   width: 60%;
-   height: 500px;
-   border: none;
-   border-radius: 8px;
-   box-shadow: 2px 2px 8px 0px #323232;
-}
-/* UBICACION */
+/* RESTAURANT-DESCRIPCION */
 
 /* FOOTER */
 footer {
@@ -244,19 +145,8 @@ footer a {
    html {
       font-size: 13px;
    }
-   .descripcion-servicios {
-      flex-direction: column;
-   }
-   .textos-descripcion,
-   .servicios {
+   .textos-descripcion {
       width: 100%;
-   }
-   .opinion-item {
-      width: 40%;
-   }
-   .ubicacion iframe {
-      width: 80%;
-      height: 350px;
    }
 }
 
@@ -274,4 +164,27 @@ footer a {
    html {
       font-size: 11px;
    }
+}
+
+.informacion {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+.informacion__items {
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 50% 50%;
+   gap: 2rem;
+}
+.informacion__item {
+   text-align: center;
+}
+.informacion__item p {
+   font-size: 2rem;
+}
+.icon {
+   width: 5rem;
+   height: 5rem;
+   object-fit: contain;
 }
