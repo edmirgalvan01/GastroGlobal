@@ -30,30 +30,31 @@
             <div class="fotos-restaurant">
                 <img id="foto_restaurant" src="" alt="">
             </div>
-            <div class="descripcion">
-                <div class="textos-descripcion">
-                    <p class="descripcion-horario" id="horario"></p>
-                    <p class="descripcion" id="descripcion"></p>
-                </div>
-            </div>
             <div class="informacion">
-                <h1 class="titulo">Informacion general</h1>
                 <div class="informacion__items">
                     <div class="informacion__item">
-                        <img class='icon' src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-map-point-real-estate-flatart-icons-outline-flatarticons-1.png" />
-                        <p>Numero de telefono</p>
+                        <p>Nombre</p>
+                        <p id="nombre_restaurant"></p>
                     </div>
                     <div class="informacion__item">
-                        <img class='icon' src="https://img.icons8.com/ios-glyphs/30/000000/phone-squared.png" />
-                        <p>Numero de telefono</p>
+                        <p>Especialidad</p>
+                        <p id="especialidad_restaurant"></p>
                     </div>
                     <div class="informacion__item">
-                        <img class='icon' src="https://img.icons8.com/ios-glyphs/30/000000/phone-squared.png" />
-                        <p>Numero de telefono</p>
+                        <p>Descripcion</p>
+                        <p id="descripcion_restaurant"></p>
                     </div>
                     <div class="informacion__item">
-                        <img class='icon' src="https://img.icons8.com/ios-glyphs/30/000000/phone-squared.png" />
+                        <p>Direccion</p>
+                        <p id="direccion_restaurant"></p>
+                    </div>
+                    <div class="informacion__item">
+                        <p>Horario</p>
+                        <p id="horario_restaurant"></p>
+                    </div>
+                    <div class="informacion__item">
                         <p>Numero de telefono</p>
+                        <p id="numeroTelefono_restaurant"></p>
                     </div>
                 </div>
             </div>
