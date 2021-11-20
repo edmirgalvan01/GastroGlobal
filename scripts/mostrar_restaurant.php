@@ -13,7 +13,7 @@ foreach ($restaurantes as $restaurant) {
         <div class="card__information">
             <h3>' . $restaurant->getNombre() . '</h3>
             <p>' . $restaurant->getEspecialidad() . '</p>
-            <a href="#">Conoce mas</a>
+            <a class="id_restaurant" data-id="' . $restaurant->getId() . '">Conoce mas</a>
         </div>
     </article>
     ';

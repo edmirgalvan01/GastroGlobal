@@ -4,7 +4,7 @@
 
 require_once('../class/DatosRestaurant.php');
 $r = new DatosRestaurant();
-$restaurant = $r->leer(26); //TODO: Recibir ID adaptable a cada restaurant
+$restaurant = $r->leer($_POST['id']);
 
 $nombre = $restaurant->getNombre();
 $foto = $restaurant->getFotos();
