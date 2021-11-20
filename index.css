@@ -155,7 +155,7 @@ html {
 .card__information p {
    font-size: 1.5rem;
 }
-.card__information a {
+.card__a {
    font-size: 1.5rem;
    color: #000;
 }

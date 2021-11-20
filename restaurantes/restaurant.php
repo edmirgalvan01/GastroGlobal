@@ -1,3 +1,12 @@
+<?php
+
+$informacion = $_POST['info'];
+foreach ($informacion as $i) {
+    echo $i;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

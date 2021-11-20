@@ -15,4 +15,5 @@ $telefono_contacto = $restaurant->getTelefono_contacto();
 $especialidad = $restaurant->getEspecialidad();
 
 $informacion = array($nombre, $foto, $descripcion, $horario, $direccion, $telefono_contacto, $especialidad);
-echo json_encode($informacion);
+header('location: ./restaurantes/restaurant.php?info=' . $informacion);
+// echo json_encode($informacion);
