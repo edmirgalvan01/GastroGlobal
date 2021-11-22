@@ -158,6 +158,8 @@ html {
 .card__information a {
    font-size: 1.5rem;
    color: #000;
+   cursor: pointer;
+   text-decoration: underline;
 }
 .card__img {
    width: 60%;

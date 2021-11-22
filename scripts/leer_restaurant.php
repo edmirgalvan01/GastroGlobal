@@ -4,7 +4,8 @@
 
 require_once('../class/DatosRestaurant.php');
 $r = new DatosRestaurant();
-$restaurant = $r->leer($_POST['id']);
+$id = $_GET['id'];
+$restaurant = $r->leer($id);
 
 $nombre = $restaurant->getNombre();
 $foto = $restaurant->getFotos();

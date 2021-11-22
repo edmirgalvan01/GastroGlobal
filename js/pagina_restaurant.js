@@ -1,10 +1,9 @@
 $(document).ready(function () {
-   var id_restaurant = $('#id_restaurant').val();
    $.ajax({
       type: 'POST',
       url: '../scripts/leer_restaurant.php',
       dataType: 'json',
-      data: { id: id_restaurant },
+      data: {},
    }).done(function (informacion) {
       var nombre = informacion[0];
       var foto = informacion[1];
