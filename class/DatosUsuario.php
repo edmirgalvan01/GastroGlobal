@@ -16,6 +16,7 @@ class UsuarioDatos extends Conexion implements Plantilla
     private $sql_leer = "SELECT * FROM Usuarios WHERE id=?";
     private $sql_leerTodo = "SELECT * FROM Usuarios";
     private $sql_buscar = "SELECT * FROM Usuarios WHERE nombre LIKE ?";
+    private $sql_login="SELECT * FROM Usuarios WHERE password=? and email=?";
     private $conexion;
 
     public function __construct()
