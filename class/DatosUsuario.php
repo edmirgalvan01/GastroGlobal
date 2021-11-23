@@ -122,6 +122,8 @@ class UsuarioDatos extends Conexion implements Plantilla
             }
         } catch (mysqli_sql_exception $e) {
             echo $e->getMessage();
+        }finally{
+            $this->conexion->close();
         }
 
         return $Usuarios;

@@ -7,7 +7,8 @@ $(document).on('click','#iniciar',function(){
             contentType: false,
             processData: false  
     }).done(function(usuario){
-            alert(usuario);
+            //alert(usuario);
+            console.log(usuario)
             $(location).attr('href','index.php');     
     });
   

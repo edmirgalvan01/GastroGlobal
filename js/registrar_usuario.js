@@ -1,6 +1,6 @@
 $(document).ready(function(){
-        $(document).on('click','#registrar',function(){ // probe con modales como el ejemplo de la profesora por ello tiene ese nombre
-            var datos= new FormData(document.getElementById('registro_usuarios')); // cambiar el nombre del formulario 
+        $(document).on('click','#registrar',function(){ 
+            var datos= new FormData(document.getElementById('registro_usuarios')); 
             $.ajax({
                 type: 'post',
                 url: 'scripts/registrar_usuario.php',
@@ -13,7 +13,7 @@ $(document).ready(function(){
                  $('#email').val("");
                  $('#password').val("");    
 
-                 $('#login').iniciar_sesion('show');
+                 //$('#login').iniciar_sesion('show');
             });
         });
     });
