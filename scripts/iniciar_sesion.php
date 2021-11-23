@@ -9,8 +9,7 @@
       $_SESSION['usuario']['email']=$usuario->getEmail();
       $usuario = $usuario->getEmail();
   }else{
-    $usuario = $_SESSION['usuario']['email'];
-      //$usuario = " usuario no existente ";
+      $usuario = " usuario no existente ";
   }
  
   echo $usuario;

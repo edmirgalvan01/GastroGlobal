@@ -8,7 +8,6 @@ $(document).on('click','#iniciar',function(){
             processData: false  
     }).done(function(usuario){
             //alert(usuario);
-            console.log(usuario)
             $(location).attr('href','index.php');     
     });
   
