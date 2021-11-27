@@ -3,7 +3,7 @@ session_start();
 $logeado = false;
 if (!empty($_SESSION['usuario']['email'])) {
     $logeado = true;
-    $nombre = "Bienvenido" . $_SESSION['usuario']['email'];
+    $nombre = "Bienvenido";
 } else {
     $nombre = "";
 }
@@ -70,16 +70,6 @@ if (!empty($_SESSION['usuario']['email'])) {
         </section>
     </main>
     <footer>
-        <div class="logo">
-            <h1>G</h1>
-            <h1>G</h1>
-        </div>
-        <nav class="footer__navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Preguntas frecuentes</a>
-            <a href="#">Restaurantes</a>
-        </nav>
         <nav class="footer__social-media">
             <a href="#"><img class="social-media__item" src="./img/i-facebook.png" alt=""></a>
             <a href="#"><img class="social-media__item" src="./img/i-instagram.png" alt=""></a>
