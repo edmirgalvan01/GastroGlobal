@@ -112,7 +112,7 @@ class UsuarioDatos extends Conexion implements Plantilla
 
         try {
             $consulta = $this->conexion->prepare($this->sql_login);
-            $consulta->bind_param('ss', $email, $password);
+            $consulta->bind_param('ss', $password, $email);
             $consulta->execute();
             $resultado = $consulta->get_result();
 
