@@ -1,11 +1,11 @@
 <?php
 session_start();
-$logeado=false;
-if(!empty($_SESSION['usuario']['email'])){
-    $logeado=true;
-    $nombre="Bienvenido".$_SESSION['usuario']['email'];
-}else{
-    $nombre="";
+$logeado = false;
+if (!empty($_SESSION['usuario']['email'])) {
+    $logeado = true;
+    $nombre = "Bienvenido" . $_SESSION['usuario']['email'];
+} else {
+    $nombre = "";
 }
 ?>
 <!DOCTYPE html>
@@ -37,18 +37,18 @@ if(!empty($_SESSION['usuario']['email'])){
             </div>
         </div>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Panel de usuario
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="drop_sesion">
-              <?php
-              if($logeado == false){
-                  echo '<li><a class="dropdown-item" id="inicio_sesion" href="#"data-bs-toggle="modal" data-bs-target="#inicio_sesiones">Iniciar Sesion</a></li>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Panel de usuario
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="drop_sesion">
+                <?php
+                if ($logeado == false) {
+                    echo '<li><a class="dropdown-item" id="inicio_sesion" href="#"data-bs-toggle="modal" data-bs-target="#inicio_sesiones">Iniciar Sesion</a></li>
                   <li><a class="dropdown-item"  id="registro" data-bs-toggle="modal" data-bs-target="#registrar_user">Registrarse</a></li>';
-              }else
-                  echo $nombre.'<li><a class="dropdown-item" id="cerrar_sesion" href="./index.php">Cerrar Sesion</a></li>';
-              ?>      
-          </ul>
+                } else
+                    echo $nombre . '<li><a class="dropdown-item" id="cerrar_sesion" href="./index.php">Cerrar Sesion</a></li>';
+                ?>
+            </ul>
         </li>
     </header>
     <div class="first-img">
@@ -60,15 +60,11 @@ if(!empty($_SESSION['usuario']['email'])){
             <section class="list__restaurantes" id="lista_restaurantes">
                 <!-- INSERTAR CON PHP -->
             </section>
-            <h1 class="home__title">Los restaurantes mas votados</h1>
-            <section class="list__restaurantes">
-                <!-- INSERTAR CON PHP -->
-            </section>
         </section>
         <section class="owner">
             <div class="owner__information">
                 <h1>Animate a ser propietario de <br> tu restaurant</h1>
-                <a href="#">Mas informacion</a>
+                <a href="./admin/pagina_admin.php">Registrate</a>
             </div>
             <img class="owner__img" src="./img/owner.jpg" alt="">
         </section>

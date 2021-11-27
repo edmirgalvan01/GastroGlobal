@@ -5,8 +5,8 @@ mysqli_report(MYSQLI_REPORT_ALL);
 class Conexion
 {
     private $user = "root";
-    private $password = "";
-    private $dbName = "gastroglobal";
+    private $password = "pinocho8";
+    private $dbName = "gastroglobal1";
     private $server = "localhost";
     private $conexion;
 
@@ -22,7 +22,7 @@ class Conexion
             //Conectamos a base de datos
             $this->conexion = new mysqli($this->server, $this->user, $this->password, $this->dbName);
             if (!$this->conexion->connect_errno) {
-            //     echo "Conectado";
+                //     echo "Conectado";
             }
         } catch (mysqli_sql_exception $error) {
             echo "Ha ocurrido un error: " . $error->getCode();
