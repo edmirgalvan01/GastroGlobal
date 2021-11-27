@@ -136,7 +136,7 @@ html {
    margin: 5rem 0;
 }
 /* CARD RESTAURANT */
-.card {
+.card__r {
    width: 30%;
    display: flex;
    gap: 10px;

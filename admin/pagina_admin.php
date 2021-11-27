@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <a href="#" class="logo">
+        <a href="../index.php" class="logo">
             <h1>G</h1>
             <h1>G</h1>
         </a>
@@ -66,12 +66,6 @@
                 <div class="form-item">
                     <label for="direccion">Direccion</label>
                     <input class="input" type="text" id="direccion" name="direccion" placeholder="Ej: Calle 12 de octubre #69 colonia Polanco">
-                </div>
-                <div class="form-item">
-                    <label for="servicios">Servicios con los que cuentan</label>
-                    <select name="servicios" id="servicios">
-                        <!-- Insertar mediante PHP -->
-                    </select>
                 </div>
                 <div class="form-item">
                     <label for="telefono_contacto_restaurant">Telefono de contacto</label>

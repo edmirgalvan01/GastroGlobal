@@ -8,7 +8,7 @@ $cardRestaurant = "";
 
 foreach ($restaurantes as $restaurant) {
     $cardRestaurant .= '
-    <article class="card">
+    <article class="card__r">
         <img src="./img/' . $restaurant->getFotos() . '" class="card__img" alt="' . $restaurant->getNombre() . '">
         <div class="card__information">
             <h3>' . $restaurant->getNombre() . '</h3>
