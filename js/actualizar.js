@@ -1,10 +1,10 @@
 $(document).on('click', '#update_restaurant', function () {
-   var date = new FormData(document.getElementById('#')); // falta el raiz a donde ira el editar
+   var date = new FormData(document.getElementById('#')); // falta la direccion donde ira el boton de actualizar 
    $.ajax({
       type: 'post',
       url: 'script/modificar_rest.php',
-      data: {}, // falta agregar los datos
+      data: date, 
       contentType: false,
       processData: false,
-   }).done(function (rest) {});
+   }).done(function () {}); // falta el return
 });
