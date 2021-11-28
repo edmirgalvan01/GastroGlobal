@@ -1,13 +1,13 @@
-$(document).on('click','#borrar',function(){
-    var datos=new FormData(document.getElementById('#'));// localizacion del boton de borrar 
+$(document).on('click','#delete_restaurant',function(){ 
+    var datos=new FormData(document.getElementById('form_delete_restaurant'));
     $.ajax({
       type:'post',
-      url:'script/', // localizacion del script de borrar 
+      url:'script/eliminar_restaurant.php',
       contentType:false,
       processData:false,
       data:datos
-    }).done(function(){ // lo que devuelve
-       //alert(#);
+    }).done(function(restaurant){ 
+       //alert(restaurant);
        mostrar();
     });
   });
