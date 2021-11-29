@@ -17,7 +17,6 @@
                      <label class="form-label">Password</label>
                      <input type="password" name="password2" class="form-control" id="password23" required></input>
                   </div>
-                
                </div>
             </form>
          </div>
