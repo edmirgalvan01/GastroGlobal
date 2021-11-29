@@ -10,7 +10,7 @@ class DatosRestaurant extends Conexion implements Plantilla
 {
     private $sqlCrear = "INSERT INTO restaurantes(nombre, descripcion, telefono_contacto, direccion, id_propietario, fotos, email, horario_entrada, horario_salida, especialidad, dias_laboran) 
                             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-    private $sqlModificar = "UPDATE restaurantes SET nombre = ?, descripcion = ? telefono_contacto = ?, direccion = ?, fotos = ?
+    private $sqlModificar = "UPDATE restaurantes SET nombre = ?, descripcion = ? telefono_contacto = ?, direccion = ?, id_propietario = ?, fotos = ?, email = ?, horario_entrada = ?, horario_salida = ?, especialidad = ?, dias_laboran = ?
                             WHERE id = ?";
     private $sqlEliminar = "DELETE FROM restaurantes WHERE id = ?";
     private $sqlLeerTodo = "SELECT * FROM restaurantes";
@@ -28,7 +28,7 @@ class DatosRestaurant extends Conexion implements Plantilla
         try {
             $consulta = $this->conexion->prepare($this->sqlCrear);
             $consulta->bind_param(
-                'ssisissssss',
+                'ssisissssssi',
                 $objeto->getNombre(),
                 $objeto->getDescripcion(),
                 $objeto->getTelefono_contacto(),
@@ -40,6 +40,7 @@ class DatosRestaurant extends Conexion implements Plantilla
                 $objeto->getHorarioSalida(),
                 $objeto->getEspecialidad(),
                 $objeto->getDiasLaboran(),
+                $objeto->getId(),
             );
             $resultado = $consulta->execute();
             return $resultado;
@@ -54,14 +55,14 @@ class DatosRestaurant extends Conexion implements Plantilla
         try {
             $consulta = $this->conexion->prepare($this->sqlModificar);
             $consulta->bind_param(
-                'ssisssssss',
+                'ssisissssss',
                 $objeto->getNombre(),
                 $objeto->getDescripcion(),
                 $objeto->getTelefono_contacto(),
                 $objeto->getDireccion(),
                 $objeto->getIdPropietario(),
                 $objeto->getFotos(),
-                $objeto->getId(),
+                $objeto->getEmail(),
                 $objeto->getHorarioEntrada(),
                 $objeto->getHorarioSalida(),
                 $objeto->getEspecialidad(),

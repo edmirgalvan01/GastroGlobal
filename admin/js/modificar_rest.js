@@ -9,8 +9,6 @@ $(document).ready(function () {
          contentType: false,
          processData: false,
          data: datos,
-      }).done(function () {
-         console.log('Todo listo');
-      });
+      }).done(function () {});
    });
 });

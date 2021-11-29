@@ -7,12 +7,12 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="POST" enctype="multipart/form-data" id="form_editar_restaurant">
+                <form method="POST" id="form_editar_restaurant" enctype="multipart/form-data">
                     <input type="hidden" name="id" id="id_m">
                     <div class="mb-3 row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control-plaintext" name="nombre" id="nombre_m" placeholder="Nombre">
+                            <input type="text" class="form-control" name="nombre" id="nombre_m">
                         </div>
                     </div>
                     <div class="mb-3 row">

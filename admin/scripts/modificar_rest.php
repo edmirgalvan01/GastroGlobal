@@ -10,7 +10,19 @@ if (!empty($_FILES['foto'])) {
     $ruta = "../../img" . $nombre;
 
     if (move_uploaded_file($_FILES['foto']['tmp_name'], $ruta)) {
-        $rest = new Restaurant($_POST['nombre'], $_POST['descripcion'], $_POST['telefono_contacto'], $_POST['direccion'], $_POST['id_propietario'], $_POST['foto'], $_POST['email'], $_POST['horario_entrada'], $_POST['horario_salida'], $_POST['especialidad'], $_POST['dias_laboran']);
+        $rest = new Restaurant(
+            $_POST['nombre'],
+            $_POST['descripcion'],
+            $_POST['telefono'],
+            $_POST['direccion'],
+            $_POST['propietario'],
+            $_POST['foto'],
+            $_POST['email'],
+            $_POST['horario1'],
+            $_POST['horario2'],
+            $_POST['especialidad'],
+            $_POST['dias']
+        );
         $rest->setId($_POST['id']);
         $resultado = $r->modificar($rest);
         $guardar = true;
@@ -19,7 +31,19 @@ if (!empty($_FILES['foto'])) {
 
 
 if ($guardar == false) {
-    $rest = new Restaurant($_POST['nombre'], $_POST['descripcion'], $_POST['telefono_contacto'], $_POST['direccion'], $_POST['id_propietario'], $_POST['foto'], $_POST['email'], $_POST['horario_entrada'], $_POST['horario_salida'], $_POST['especialidad'], $_POST['dias_laboran']);
+    $rest = new Restaurant(
+        $_POST['nombre'],
+        $_POST['descripcion'],
+        $_POST['telefono'],
+        $_POST['direccion'],
+        $_POST['propietario'],
+        $_POST['foto'],
+        $_POST['email'],
+        $_POST['horario1'],
+        $_POST['horario2'],
+        $_POST['especialidad'],
+        $_POST['dias']
+    );
     $rest->setId($_POST['id']);
     $resultado = $r->modificar($rest);
 }
