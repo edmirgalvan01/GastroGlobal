@@ -234,6 +234,18 @@ footer {
 /* FOOTER */
 
 /* MODAL RESTAURANT */
+.modal__titulo {
+   font-size: 3rem;
+   font-weight: bold;
+}
+.modal__img {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+.modal__item {
+   font-size: 1.5rem;
+}
 /* MODAL RESTAURANT */
 
 /* RESPONSIVE DESIGN */
