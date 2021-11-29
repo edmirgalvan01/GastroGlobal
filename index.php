@@ -17,7 +17,7 @@ if (!empty($_SESSION['usuario']['email'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Document</title>
@@ -32,19 +32,20 @@ if (!empty($_SESSION['usuario']['email'])) {
         <div class="header__search">
             <input type="text" id="input__search" class="header__search--input" placeholder="Busca tu lugar preferido...">
             <div class="search__results--default" id="search__results">
-                <!-- TODO: Agregar mediante script -->
                 <!-- ACTIVAR MEDIANTE JS -->
             </div>
         </div>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown header__li">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Panel de usuario
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="drop_sesion">
                 <?php
                 if ($logeado == false) {
-                    echo '<li><a class="dropdown-item" id="inicio_sesion" href="#"data-bs-toggle="modal" data-bs-target="#inicio_sesiones">Iniciar Sesion</a></li>
-                  <li><a class="dropdown-item"  id="registro" data-bs-toggle="modal" data-bs-target="#registrar_user">Registrarse</a></li>';
+                    echo '
+                        <li><a class="dropdown-item" id="inicio_sesion" href="#"data-bs-toggle="modal" data-bs-target="#inicio_sesiones">Iniciar Sesion</a></li>
+                        <li><a class="dropdown-item"  id="registro" data-bs-toggle="modal" data-bs-target="#registrar_user">Registrarse</a></li>
+                    ';
                 } else
                     echo $nombre . '<li><a class="dropdown-item" id="cerrar_sesion" href="./index.php">Cerrar Sesion</a></li>';
                 ?>
@@ -52,7 +53,7 @@ if (!empty($_SESSION['usuario']['email'])) {
         </li>
     </header>
     <div class="first-img">
-        <h1 class="first-img__title">¿No sabes donde comer? ¡Nosotros te ayudamos!</h1>
+        <h1 class="first-img__title">¿No sabes donde comer? <br> ¡Nosotros te ayudamos!</h1>
     </div>
     <main class="layout">
         <section class="home__restaurantes">
@@ -89,5 +90,6 @@ if (!empty($_SESSION['usuario']['email'])) {
 </html>
 
 <?php
+require_once('./modal/modal_restaurant.php');
 require_once('./modal/modal_registro.php');
 ?>
