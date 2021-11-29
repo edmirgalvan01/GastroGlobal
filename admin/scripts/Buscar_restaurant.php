@@ -10,7 +10,7 @@ $resultados = '';
 
 foreach ($restaurantes as $restaurant) {
     $resultados .= '
-    <a id="' . $restaurant->getId() . '" href="#" class="results__item">
+    <a data-id="' . $restaurant->getId() . '" href="#" class="results__item detalles" data-bs-toggle="modal" data-bs-target="#detalles_restaurante">
         <img src="./img/' . $restaurant->getFotos() . '" class="results__item--img" alt="' . $restaurant->getNombre() . '">
         <p class="results__item--name">' . $restaurant->getNombre() . '</p>
     </a>
