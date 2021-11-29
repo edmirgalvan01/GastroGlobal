@@ -5,8 +5,8 @@ mysqli_report(MYSQLI_REPORT_ALL);
 class Conexion
 {
     private $user = "root";
-    private $password = "";
-    private $dbName = "gastroglobal";
+    private $password = "pinocho8";
+    private $dbName = "gastroglobal1";
     private $server = "localhost";
     private $conexion;
 
