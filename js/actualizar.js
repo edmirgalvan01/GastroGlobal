@@ -1,4 +1,4 @@
-$(document).on('click', '#update_restaurant', function () {
+$(document).on('click', '#editar_b', function () {
    var date = new FormData(document.getElementById('form_editar_restaurant')); 
    $.ajax({
       type: 'post',

@@ -1,5 +1,5 @@
 <!-- Modal editar Restaurant -->
-<div class="modal fade" id="modal_editar_restaurant" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="editar_m" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -7,7 +7,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="Post" enctype="multipart/form-data" id="form_edit_pokemo">
+                <form method="Post" enctype="multipart/form-data" id="form_editar_restaurant">
                     <input type="hidden" name="id" id="id_m">
                     <div class="mb-3 row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
@@ -84,7 +84,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success" id="update_pokemon" data-bs-dismiss="modal">Modificar</button>
+                <button type="button" class="btn btn-success" id="update_restaurant" data-bs-dismiss="modal">Modificar</button>
             </div>
         </div>
     </div>

@@ -8,7 +8,7 @@ $(document).on('click','#iniciar',function(){
             processData: false  
     }).done(function(usuario){
             //alert(usuario);
-            $(location).attr('href','index.php');     
+            $(location).attr('href','./admin/panel.php');     
     });
   
 });
