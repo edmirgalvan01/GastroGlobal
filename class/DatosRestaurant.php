@@ -28,7 +28,7 @@ class DatosRestaurant extends Conexion implements Plantilla
         try {
             $consulta = $this->conexion->prepare($this->sqlCrear);
             $consulta->bind_param(
-                'ssisissssssi',
+                'ssisissssss',
                 $objeto->getNombre(),
                 $objeto->getDescripcion(),
                 $objeto->getTelefono_contacto(),
@@ -40,7 +40,7 @@ class DatosRestaurant extends Conexion implements Plantilla
                 $objeto->getHorarioSalida(),
                 $objeto->getEspecialidad(),
                 $objeto->getDiasLaboran(),
-                $objeto->getId(),
+                $objeto->getDiasLaboran(),
             );
             $resultado = $consulta->execute();
             return $resultado;
@@ -55,7 +55,7 @@ class DatosRestaurant extends Conexion implements Plantilla
         try {
             $consulta = $this->conexion->prepare($this->sqlModificar);
             $consulta->bind_param(
-                'ssisissssss',
+                'ssisissssssi',
                 $objeto->getNombre(),
                 $objeto->getDescripcion(),
                 $objeto->getTelefono_contacto(),
@@ -67,6 +67,7 @@ class DatosRestaurant extends Conexion implements Plantilla
                 $objeto->getHorarioSalida(),
                 $objeto->getEspecialidad(),
                 $objeto->getDiasLaboran(),
+                $objeto->getId(),
             );
             $resultado = $consulta->execute();
             return $resultado;
