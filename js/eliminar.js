@@ -1,7 +1,7 @@
 $(document).on('click','.del', function(){
     var id=$(this).attr('data-id');
-        alert(id);
-        $('#id_e').val(id);
+        //alert(id);
+        $('#id_eliminar2').val(id);
 });
 
 $(document).on('click','#eliminar_b',function(){ 
