@@ -3,7 +3,7 @@ $(document).on('click', '.del', function () {
    $('#id_eliminar2').val(id);
 });
 
-$(document).on('click', '#eliminar_b', function () {
+$(document).on('click', '#delete_restaurant', function () {
    var datos = new FormData(
       document.getElementById('form_eliminar_restaurant')
    );
