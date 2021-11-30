@@ -10,4 +10,3 @@ $guardado=false;
         $guardado=true;
         }
 echo $res;
-?>

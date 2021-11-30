@@ -1,10 +1,10 @@
 $(document).on('click', '#editar_b', function () {
-   var date = new FormData(document.getElementById('form_editar_restaurant')); 
+   var date = new FormData(document.getElementById('form_editar_restaurant'));
    $.ajax({
       type: 'post',
       url: 'scripts/modificar_rest.php',
-      data: date, 
+      data: date,
       contentType: false,
       processData: false,
-   }).done(function (resultado){}); 
+   }).done(function (resultado) {});
 });
