@@ -28,9 +28,9 @@ $(document).on('click', '#subir_restaurant', function () {
       contentType: false,
       processData: false,
 
-   }).done(function (resultado){
-      console.log(resultado);
-     //alert(resultado); 
+   }).done(function(resultado){
+      //console.log(resultado);
+     alert(resultado); 
    });
 
 });

@@ -8,8 +8,9 @@
             </div>
             <div class="modal-body">
                 <form method="Post" enctype="multipart/form-data" id="form_editar_restaurant">
-                    <input type="hidden" name="id_edit" id="id_editar">
+                    <input type="hidden" name="id" id="id">
                     <div class="mb-3 row">
+                        <input type="hidden" value="" id="imagen2" name="imagen2">
                         <label for="inputPassword" class="col-sm-2 col-form-label">Foto</label>
                         <div class="col-sm-8">
                             <img src="" alt="" id="imagen_m" height="50px" width="50px">
