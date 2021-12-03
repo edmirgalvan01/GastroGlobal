@@ -1,10 +1,11 @@
+
 $(document).on('click','.edit', function(){
    var id=$(this).attr('data-id');
    var foto=$('#foto_'+id).attr('data-foto');
    var nom=$('#nomb_1'+id).text();
    var especi=$('#especi_1'+id).text();
    var descrip=$('#descrip_1'+id).text();
-   alert(nom);
+   //alert(descrip);
    var ruta='../img/'+foto;
 
    $('#id_m').val(id);
@@ -17,14 +18,19 @@ $(document).on('click','.edit', function(){
 });
 
 
-$(document).on('click', '#update_restaurant', function () {
+$(document).on('click', '#subir_restaurant', function () {
    var date = new FormData(document.getElementById('form_editar_restaurant')); 
+
    $.ajax({
       type: 'post',
       url: 'scripts/modificar_rest.php',
-      data: date, 
+      data: date,
       contentType: false,
       processData: false,
-   }).done(function (resultado){});
+
+   }).done(function (resultado){
+      console.log(resultado);
      //alert(resultado); 
+   });
+
 });

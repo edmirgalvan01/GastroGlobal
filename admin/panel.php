@@ -28,6 +28,6 @@
 
 </html>
 <?php
-require_once('../admin/modal2/eliminar_rest.php');
-require_once('../admin/modal2/modificar_rest.php');
+require_once('../admin/modal/eliminar_rest.php');
+require_once('../admin/modal/modificar_rest.php');
 ?>
