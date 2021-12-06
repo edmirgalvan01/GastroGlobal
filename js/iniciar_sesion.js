@@ -7,6 +7,6 @@ $(document).on('click', '#iniciar', function () {
       contentType: false,
       processData: false,
    }).done(function (usuario) {
-      $(location).attr('href', './admin/panel.php');
+      // $(location).attr('href', './admin/panel.php');
    });
 });
