@@ -70,7 +70,13 @@ if (!empty($_SESSION['usuario']['email'])) {
             <img class="owner__img" src="./img/owner.jpg" alt="">
         </section>
     </main>
-    <footer>
+    <footer class="footer">
+        <h1 class="footer__title">Muchas gracias por visitar esta aplicacion</h1>
+        <p class="footer__subtitle">Visita nuestros perfiles de Github</p>
+        <div class="footer__social">
+            <a class="social__item" href="https://github.com/edmirgalvan01" target="_blank">Edmir Galvan</a>
+            <a class="social__item" href="https://github.com/Julio45321" target="_blank">Julio Cesar</a>
+        </div>
 
     </footer>
     <script src="./js/jquery-3.6.0.min.js"></script>
