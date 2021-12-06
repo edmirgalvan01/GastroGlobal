@@ -17,7 +17,7 @@ if (!empty($_SESSION['usuario']['email'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Gastro Global</title>
@@ -25,10 +25,10 @@ if (!empty($_SESSION['usuario']['email'])) {
 
 <body>
     <header class="header">
-        <div class="logo">
+        <a href="#" class="logo">
             <h1>G</h1>
             <h1>G</h1>
-        </div>
+        </a>
         <div class="header__search">
             <input type="text" id="input__search" class="header__search--input" placeholder="Busca tu lugar preferido...">
             <div class="search__results--default" id="search__results">
@@ -71,11 +71,7 @@ if (!empty($_SESSION['usuario']['email'])) {
         </section>
     </main>
     <footer>
-        <nav class="footer__social-media">
-            <a href="#"><img class="social-media__item" src="./img/i-facebook.png" alt=""></a>
-            <a href="#"><img class="social-media__item" src="./img/i-instagram.png" alt=""></a>
-            <a href="#"><img class="social-media__item" src="./img/i-twitter.png" alt=""></a>
-        </nav>
+
     </footer>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/mostrar_restaurant.js"></script>
