@@ -2,6 +2,11 @@
 html {
    font-size: 10px;
 }
+:root {
+   --slogan: calc(4em + 1vw);
+   --title: calc(1em + 1vw);
+   --paragraph: calc(1rem + 1vw);
+}
 * {
    padding: 0;
    margin: 0;
@@ -21,7 +26,7 @@ html {
    color: #ffcc29;
 }
 .home__title {
-   font-size: 3rem;
+   font-size: var(--title);
    font-weight: bold;
 }
 /* HELPERS */
@@ -115,7 +120,7 @@ html {
    text-align: center;
 }
 .first-img__title {
-   font-size: 5rem;
+   font-size: var(--slogan);
    font-weight: bold;
    background-image: linear-gradient(90deg, #00af91 0%, #ffcc29 100%);
    -webkit-background-clip: text;
@@ -167,12 +172,11 @@ html {
    font-size: 2rem;
 }
 .card__information p {
-   font-size: 1.5rem;
+   font-size: var(--paragraph);
 }
 .card__information a {
    background-color: #00af91;
-   width: 90%;
-   padding: 10px 20px;
+   padding: 10px;
    border-radius: 8px;
    text-decoration: none;
    color: #000;
@@ -187,9 +191,10 @@ html {
    color: #000;
 }
 .card__img {
-   width: 60%;
+   width: 50%;
    height: 100%;
    border-radius: 10px 0px 0px 10px;
+   object-fit: cover;
 }
 /* CARD RESTAURANT */
 /* OWNER */
@@ -222,6 +227,7 @@ html {
 }
 .owner__img {
    width: 50%;
+   height: auto;
 }
 /* OWNER */
 /* HOME */
@@ -229,13 +235,14 @@ html {
 /* FOOTER */
 .footer {
    width: 100%;
-   height: 20vh;
+   height: 30vh;
    background-color: #00af91;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    gap: 10px;
+   padding: 20px 10px;
 }
 .footer__title {
    font-weight: bold;
@@ -274,60 +281,3 @@ html {
 /* MODAL RESTAURANT */
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1200px) {
-   .first-img__title {
-      font-size: 4rem;
-   }
-   .card {
-      width: 40%;
-   }
-}
-@media (max-width: 900px) {
-   html {
-      font-size: 8px;
-   }
-   .first-img {
-      height: 20vh;
-   }
-   .owner__information h1 {
-      font-size: 3rem;
-   }
-}
-@media (max-width: 750px) {
-   .header {
-      padding: 10px 5rem;
-   }
-   .header__search {
-      padding: 10px;
-      width: 50%;
-   }
-   .card {
-      flex-direction: column;
-      width: 45%;
-   }
-   .list__restaurantes {
-      width: 90%;
-      justify-content: flex-end;
-   }
-   .card__information {
-      padding: 0;
-   }
-   .social-media__item {
-      height: 20px;
-   }
-}
-@media (max-width: 500px) {
-   html {
-      font-size: 5px;
-   }
-   .first-img {
-      height: 15vh;
-   }
-   .list__restaurantes {
-      width: 100%;
-      justify-content: center;
-   }
-   .card {
-      align-items: center;
-   }
-}
