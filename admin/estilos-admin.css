@@ -1,8 +1,7 @@
 html {
    scroll-behavior: smooth;
-   font-size: 16px;
+   font-size: 10px;
 }
-
 * {
    margin: 0;
    padding: 0;
@@ -13,45 +12,21 @@ html {
 /* HEADER */
 header {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
    padding: 15px 30px;
    margin-bottom: 20px;
 }
-
 .logo {
    display: flex;
    color: #00af91;
    text-decoration: none;
 }
-
 .logo h1 {
-   font-size: 2rem;
+   font-size: 3rem;
 }
-
 .logo h1:first-child {
    color: #ffcc29;
-}
-
-.barra-busqueda {
-   padding: 10px;
-   width: 50%;
-   border-radius: 10px;
-   outline: none;
-   border: 1px solid #c2c2c2;
-   box-shadow: 0px 1px 3px -1px #323232;
-}
-
-.barra-busqueda::placeholder {
-   color: #c2c2c2;
-   font-size: 0.8rem;
-}
-
-.img-perfil img {
-   width: 40px;
-   height: 40px;
-   border-radius: 100%;
-   object-fit: cover;
 }
 /* HEADER */
 
@@ -61,16 +36,14 @@ main {
    align-items: center;
    justify-content: center;
 }
-
 .container {
    width: 90%;
    padding: 2rem 0;
 }
-
 .container h1 {
    margin-bottom: 2rem;
+   font-size: 3rem;
 }
-
 .formulario {
    display: flex;
    flex-direction: row;
@@ -80,30 +53,29 @@ main {
    gap: 2rem;
    margin-bottom: 2rem;
 }
-
 .form-item {
    padding: 10px 30px;
    gap: 10px;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: center;
    width: 30%;
 }
-
+.form-item label {
+   font-size: 1.5rem;
+}
 .input {
    padding: 0.3rem 1rem;
-   background: #dddddd;
-   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-   border-radius: 10px;
-   border: none;
+   border-radius: 6px;
+   height: 30px;
+   border: 2px solid #ddd;
    outline: none;
 }
-
 .boton {
    background-color: #00af91;
    border: none;
    padding: 10px 20px;
    border-radius: 8px;
-   font-size: 1rem;
+   font-size: 1.4rem;
    cursor: pointer;
 }
