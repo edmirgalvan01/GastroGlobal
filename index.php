@@ -1,6 +1,7 @@
 <?php
 session_start();
 $logeado = false;
+//si no viene vacia la variable SESSION
 if (!empty($_SESSION['usuario']['email'])) {
     $logeado = true;
     $nombre = "Bienvenido";
@@ -29,12 +30,13 @@ if (!empty($_SESSION['usuario']['email'])) {
             <h1>G</h1>
             <h1>G</h1>
         </a>
-        <div class="header__search">
+        <a class="header__search">
             <input type="text" id="input__search" class="header__search--input" placeholder="Busca tu lugar preferido...">
             <div class="search__results--default" id="search__results">
                 <!-- ACTIVAR MEDIANTE JS -->
             </div>
-        </div>
+        </a>
+
         <li class="nav-item dropdown header__li">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Panel de usuario
@@ -70,15 +72,6 @@ if (!empty($_SESSION['usuario']['email'])) {
             <img class="owner__img" src="./img/owner.jpg" alt="">
         </section>
     </main>
-    <footer class="footer">
-        <h1 class="footer__title">Muchas gracias por visitar esta aplicacion</h1>
-        <p class="footer__subtitle">Visita nuestros perfiles de Github</p>
-        <div class="footer__social">
-            <a class="social__item" href="https://github.com/edmirgalvan01" target="_blank">Edmir Galvan</a>
-            <a class="social__item" href="https://github.com/Julio45321" target="_blank">Julio Cesar</a>
-        </div>
-
-    </footer>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/mostrar_restaurant.js"></script>
     <script src="./js/busqueda_rest.js"></script>

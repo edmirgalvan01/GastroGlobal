@@ -4,7 +4,7 @@ html {
 }
 :root {
    --slogan: calc(4em + 1vw);
-   --title: calc(1em + 1vw);
+   --title: calc(1rem + 1vw);
    --paragraph: calc(1rem + 1vw);
 }
 * {
@@ -233,36 +233,6 @@ html {
 /* HOME */
 
 /* FOOTER */
-.footer {
-   width: 100%;
-   height: 30vh;
-   background-color: #00af91;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 10px;
-   padding: 20px 10px;
-}
-.footer__title {
-   font-weight: bold;
-   font-size: 3rem;
-}
-.footer__subtitle {
-   font-size: 2rem;
-}
-.footer__social {
-   display: flex;
-   gap: 15px;
-}
-.social__item {
-   color: #000;
-   text-decoration: none;
-   border-radius: 8px;
-   font-size: 2rem;
-   background-color: #ffcc29;
-   padding: 5px 10px;
-}
 /* FOOTER */
 
 /* MODAL RESTAURANT */
@@ -281,3 +251,28 @@ html {
 /* MODAL RESTAURANT */
 
 /* RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+   .card__r {
+      width: 40%;
+   }
+   .list__restaurantes {
+      width: 100%;
+   }
+}
+@media (max-width: 1000px) {
+   .card__information a {
+      width: auto;
+      padding: 5px 10px;
+   }
+   .card__r {
+      width: 40%;
+   }
+}
+@media (max-width: 800px) {
+   .list__restaurantes {
+      gap: 1rem;
+   }
+   .card__information {
+      padding: 10px;
+   }
+}
