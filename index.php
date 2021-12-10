@@ -72,9 +72,6 @@ if (!empty($_SESSION['usuario']['email'])) {
             <img class="owner__img" src="./img/owner.jpg" alt="">
         </section>
     </main>
-    <footer>
-
-    </footer>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/mostrar_restaurant.js"></script>
     <script src="./js/busqueda_rest.js"></script>

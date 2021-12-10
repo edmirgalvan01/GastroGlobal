@@ -115,7 +115,7 @@ html {
    text-align: center;
 }
 .first-img__title {
-   font-size: 5rem;
+   font-size: 4rem;
    font-weight: bold;
    background-image: linear-gradient(90deg, #00af91 0%, #ffcc29 100%);
    -webkit-background-clip: text;
@@ -167,12 +167,11 @@ html {
    font-size: 2rem;
 }
 .card__information p {
-   font-size: 1.5rem;
+   font-size: 1.3rem;
 }
 .card__information a {
    background-color: #00af91;
-   width: 90%;
-   padding: 10px 20px;
+   padding: 10px;
    border-radius: 8px;
    text-decoration: none;
    color: #000;
@@ -187,9 +186,10 @@ html {
    color: #000;
 }
 .card__img {
-   width: 60%;
+   width: 50%;
    height: 100%;
    border-radius: 10px 0px 0px 10px;
+   object-fit: cover;
 }
 /* CARD RESTAURANT */
 /* OWNER */
@@ -222,6 +222,7 @@ html {
 }
 .owner__img {
    width: 50%;
+   height: auto;
 }
 /* OWNER */
 /* HOME */
@@ -263,6 +264,9 @@ html {
    }
 }
 @media (max-width: 800px) {
+   .first-img {
+      height: 15vh;
+   }
    .list__restaurantes {
       gap: 1rem;
    }
@@ -270,7 +274,31 @@ html {
       padding: 10px;
    }
 }
-
-.detalles__r--mobile {
-   display: none;
+@media (max-width: 550px) {
+   html {
+      font-size: 8px;
+   }
+   .home__restaurantes {
+      margin: 0;
+   }
+   .owner__information h1 {
+      font-size: 2.3rem;
+   }
+   .owner__information a {
+      font-size: 1.5rem;
+   }
+   .list__restaurantes {
+      margin: 2rem 0;
+   }
+}
+@media (max-width: 450px) {
+   .first-img__title {
+      font-size: 3rem;
+   }
+   .home__title {
+      font-size: 2rem;
+   }
+   .card__r {
+      width: 80%;
+   }
 }

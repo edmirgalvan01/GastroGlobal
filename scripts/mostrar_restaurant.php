@@ -14,7 +14,6 @@ foreach ($restaurantes as $restaurant) {
             <h3>' . $restaurant->getNombre() . '</h3>
             <p>' . $restaurant->getEspecialidad() . '</p>
             <a href="" data-id="' . $restaurant->getId() . '" data-bs-toggle="modal" data-bs-target="#detalles_restaurante" class="detalles">Conoce mas</a>
-            <a href="" class="detalles__r--mobile" data-id="' . $restaurant->getId() . '" data-bs-toggle="modal" data-bs-target="#detalles_restaurante" class="detalles">i</a>
         </div>
     </article>
     ';
