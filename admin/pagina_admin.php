@@ -19,18 +19,18 @@
     <main>
         <div class="container">
             <h1>Informacion personal</h1>
-            <form action="./scripts/insertar_propietario.php" method="post" enctype="multipart/form-data" class="formulario">
+            <form action="./scripts/insertar_propietario.php" id="form__registro-propietario" method="post" enctype="multipart/form-data" class="formulario">
                 <div class="form-item">
                     <label for="nombre_propietario">Nombre completo</label>
-                    <input class="input" type="text" id="nombre_propietario" name="nombre_propietario" required>
+                    <input id="nombre_p" class="input" type="text" id="nombre_propietario" name="nombre_propietario" required>
                 </div>
                 <div class="form-item">
                     <label for="email_propietario">Correo electronico</label>
-                    <input class="input" type="email" id="email_propietario" name="email_propietario" required>
+                    <input id="email_p" class="input" type="email" id="email_propietario" name="email_propietario" required>
                 </div>
                 <div class="form-item">
                     <label for="contreseña">Contraseña</label>
-                    <input class="input" type="password" id="contreseña" name="contraseña" required>
+                    <input id="password_p" class="input" type="password" id="contreseña" name="contraseña" required>
                 </div>
 
                 <button class="boton" type="submit" id="guardar_propietario">Guardar</button>
@@ -90,6 +90,7 @@
         </div>
     </main>
     <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="./js/reset_form.js"></script>
     <script src="../js/propietario_restaurant.js"></script>
 </body>
 
