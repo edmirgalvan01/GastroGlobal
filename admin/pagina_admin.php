@@ -90,7 +90,6 @@
         </div>
     </main>
     <script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="../js/tipos_restaurant.js"></script>
     <script src="../js/propietario_restaurant.js"></script>
 </body>
 
