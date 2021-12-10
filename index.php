@@ -1,6 +1,7 @@
 <?php
 session_start();
 $logeado = false;
+//si no viene vacia la variable SESSION
 if (!empty($_SESSION['usuario']['email'])) {
     $logeado = true;
     $nombre = "Bienvenido";
@@ -29,12 +30,13 @@ if (!empty($_SESSION['usuario']['email'])) {
             <h1>G</h1>
             <h1>G</h1>
         </a>
-        <div class="header__search">
+        <a class="header__search">
             <input type="text" id="input__search" class="header__search--input" placeholder="Busca tu lugar preferido...">
             <div class="search__results--default" id="search__results">
                 <!-- ACTIVAR MEDIANTE JS -->
             </div>
-        </div>
+        </a>
+
         <li class="nav-item dropdown header__li">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Panel de usuario

@@ -6,7 +6,5 @@ $(document).on('click', '#iniciar', function () {
       data: datos,
       contentType: false,
       processData: false,
-   }).done(function (usuario) {
-      // $(location).attr('href', './admin/panel.php');
-   });
+   }).done(function (usuario) {});
 });
