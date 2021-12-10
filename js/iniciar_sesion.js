@@ -6,5 +6,7 @@ $(document).on('click', '#iniciar', function () {
       data: datos,
       contentType: false,
       processData: false,
-   }).done(function (usuario) {});
+   }).done(function (usuario) {
+      $(location).attr('href', 'index.php');
+   });
 });

@@ -8,12 +8,9 @@ $(document).ready(function () {
          contentType: false,
          processData: false,
       }).done(function (res) {
-         //alert(res);
          $('#nombre').val('');
          $('#email').val('');
          $('#password').val('');
-
-         //$('#login').iniciar_sesion('show');
       });
    });
 });

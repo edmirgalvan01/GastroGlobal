@@ -1,7 +1,6 @@
 <?php
 session_start();
 $logeado = false;
-//si no viene vacia la variable SESSION
 if (!empty($_SESSION['usuario']['email'])) {
     $logeado = true;
     $nombre = "Bienvenido";
