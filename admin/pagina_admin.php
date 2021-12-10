@@ -15,11 +15,6 @@
             <h1>G</h1>
             <h1>G</h1>
         </a>
-        <input class="barra-busqueda" placeholder="Busca tu lugar preferido" />
-        <!-- TODO: Agregar icono de busqueda para dispositivos moviles -->
-        <a href="" class="img-perfil">
-            <img src="../img/img-perfil.jpg" alt="">
-        </a>
     </header>
     <main>
         <div class="container">
