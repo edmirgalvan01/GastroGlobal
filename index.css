@@ -246,59 +246,31 @@ html {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 1200px) {
-   .first-img__title {
-      font-size: 4rem;
-   }
-   .card {
+   .card__r {
       width: 40%;
-   }
-}
-@media (max-width: 900px) {
-   html {
-      font-size: 8px;
-   }
-   .first-img {
-      height: 20vh;
-   }
-   .owner__information h1 {
-      font-size: 3rem;
-   }
-}
-@media (max-width: 750px) {
-   .header {
-      padding: 10px 5rem;
-   }
-   .header__search {
-      padding: 10px;
-      width: 50%;
-   }
-   .card {
-      flex-direction: column;
-      width: 45%;
-   }
-   .list__restaurantes {
-      width: 90%;
-      justify-content: flex-end;
-   }
-   .card__information {
-      padding: 0;
-   }
-   .social-media__item {
-      height: 20px;
-   }
-}
-@media (max-width: 500px) {
-   html {
-      font-size: 5px;
-   }
-   .first-img {
-      height: 15vh;
    }
    .list__restaurantes {
       width: 100%;
-      justify-content: center;
    }
-   .card {
-      align-items: center;
+}
+@media (max-width: 1000px) {
+   .card__information a {
+      width: auto;
+      padding: 5px 10px;
    }
+   .card__r {
+      width: 40%;
+   }
+}
+@media (max-width: 800px) {
+   .list__restaurantes {
+      gap: 1rem;
+   }
+   .card__information {
+      padding: 10px;
+   }
+}
+
+.detalles__r--mobile {
+   display: none;
 }
