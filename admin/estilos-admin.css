@@ -58,7 +58,6 @@ main {
    gap: 10px;
    display: flex;
    flex-direction: column;
-   align-items: center;
    width: 30%;
 }
 .form-item label {
@@ -66,10 +65,15 @@ main {
 }
 .input {
    padding: 0.3rem 1rem;
-   border-radius: 6px;
    height: 30px;
-   border: 2px solid #ddd;
+   border: none;
+   border-bottom: 2px solid #ddd;
    outline: none;
+}
+.input::placeholder {
+   font-size: 1.2rem;
+   font-style: italic;
+   color: #cacaca;
 }
 .boton {
    background-color: #00af91;
@@ -78,4 +82,19 @@ main {
    border-radius: 8px;
    font-size: 1.4rem;
    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+   .container {
+      width: 100%;
+      padding: 2rem 1rem;
+   }
+}
+@media (max-width: 600px) {
+   html {
+      font-size: 7px;
+   }
+   .form-item {
+      width: 90%;
+   }
 }
