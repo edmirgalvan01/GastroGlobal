@@ -71,6 +71,15 @@ if (!empty($_SESSION['usuario']['email'])) {
             <img class="owner__img" src="./img/owner.jpg" alt="">
         </section>
     </main>
+    <footer>
+        <p class="footer--title">Realizado por <b>Julio Cesar Ramos Franco</b> y <b>Edmir Galvan Vazquez</b></p>
+        <p class="footer--subtitle">Muchas gracias por utilizar nuestra aplicacion</p>
+        <p class="footer--social">Visita nuestro Github</p>
+        <div class="footer--social-media">
+            <a target="_blank" href="https://github.com/edmirgalvan01">Edmir Galvan</a>
+            <a target="_blank" href="https://github.com/Julio45321">Julio Ramos</a>
+        </div>
+    </footer>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/mostrar_restaurant.js"></script>
     <script src="./js/busqueda_rest.js"></script>

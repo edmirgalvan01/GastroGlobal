@@ -1,7 +1,7 @@
 <?php
 
 
-require_once('conexion.php'); //cree una conexion ficticia para no me diera el error en visual code// 
+require_once('Conexion.php'); //cree una conexion ficticia para no me diera el error en visual code// 
 require_once('Plantilla.php');
 require_once('Propietario.php');
 

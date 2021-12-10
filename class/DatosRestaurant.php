@@ -142,6 +142,7 @@ class DatosRestaurant extends Conexion implements Plantilla
         }
         return $restaurant;
     }
+
     public function buscar($valor)
     {
         $restaurant = null;

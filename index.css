@@ -228,6 +228,40 @@ html {
 /* HOME */
 
 /* FOOTER */
+footer {
+   width: 100%;
+   padding: 20px 0;
+   background-color: #00af91;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: auto;
+}
+.footer--title {
+   font-size: 3rem;
+}
+.footer--subtitle {
+   font-size: 2rem;
+}
+.footer--social {
+   font-weight: bold;
+   font-size: 1.4rem;
+}
+.footer--social-media a {
+   font-size: 1.4rem;
+   background-color: #ffcc29;
+   padding: 10px 20px;
+   border-radius: 8px;
+   text-decoration: none;
+   color: #000;
+   border: 1px solid #ffcc29;
+   transition: all 0.3s;
+}
+.footer--social-media a:hover {
+   background-color: transparent;
+   color: #000;
+}
 /* FOOTER */
 
 /* MODAL RESTAURANT */

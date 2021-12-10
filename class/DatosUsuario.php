@@ -1,7 +1,7 @@
 <?php
 
 
-require_once('conexion.php');
+require_once('Conexion.php');
 require_once('Plantilla.php');
 require_once('Usuario.php');
 
@@ -16,7 +16,7 @@ class UsuarioDatos extends Conexion implements Plantilla
     private $sql_leer = "SELECT * FROM Usuarios WHERE id=?";
     private $sql_leerTodo = "SELECT * FROM Usuarios";
     private $sql_buscar = "SELECT * FROM Usuarios WHERE nombre LIKE ?";
-    private $sql_login="SELECT * FROM Usuarios WHERE password=? and email=?";
+    private $sql_login = "SELECT * FROM Usuarios WHERE password=? and email=?";
     private $conexion;
 
     public function __construct()
@@ -122,7 +122,7 @@ class UsuarioDatos extends Conexion implements Plantilla
             }
         } catch (mysqli_sql_exception $e) {
             echo $e->getMessage();
-        }finally{
+        } finally {
             $this->conexion->close();
         }
 
